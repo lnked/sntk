@@ -1,0 +1,26 @@
+@@include('./components/meta.html', {
+	"title": "заказчики"
+})
+
+<div class="layout-wrapper">
+	
+	@@include('./components/upper.html')
+	
+	@@include('./components/header.html')
+	
+	@@include('./components/navigation.html', {
+		"current": "customers"
+	})
+
+	<div class="layout-wrapper__inner" itemprop="mainContentOfPage">
+	
+
+	</div>
+
+</div>
+
+@@include('./components/footer.html', {
+	"current": "customers"
+})
+
+@@include('./components/scripts.html')

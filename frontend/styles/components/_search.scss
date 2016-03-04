@@ -1,0 +1,38 @@
+.search {
+	height: 3.8rem;
+	background-color: #fff;
+	
+	&:after {
+		width: 1px;
+		height: 15px;
+		content: "";
+		opacity: .4;
+		position: absolute;
+		right: 34px;
+		top: 12px;
+		background-color: #818183;
+	}
+
+	&__input {
+		border: 0;
+		width: 100%;
+		height: 3.8rem;
+		font-weight: 400;
+		font-size: 1.3rem;
+		font-family: $font-tahoma;
+		padding: 0 45px 0 13px;
+	}
+	
+	&__button {
+		width: 1.6rem;
+		height: 1.6rem;
+		border: 0;
+		position: absolute;
+		right: 10px;
+		top: 12px;
+		cursor: pointer;
+		background: url(../images/search-button.png) 50% 50% no-repeat;
+		background-image: url(../images/search-button.svg);
+		background-size: 1.6rem 1.6rem;
+	}
+}

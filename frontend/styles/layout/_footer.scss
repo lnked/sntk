@@ -1,0 +1,100 @@
+.layout-footer {
+	width: 100%;
+	clear: both;
+	overflow: hidden;
+	position: relative;
+	height: $footer-height;
+	margin-top: -$footer-height;
+	background-color: $blue-color;
+	padding-top: 6.5rem;
+
+	&__wrapper {
+		@extend %layout;
+	}
+
+	&__navigation {
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		z-index: 10;
+	}
+		
+	&__contacts {
+		position: absolute;
+		left: 0;
+		top: 34px;
+
+		&__block {
+			color: #fefefe;
+			font-size: 1.4rem;
+			font-weight: 400;
+			line-height: 2.2rem;
+			margin-bottom: 2rem;
+		}
+	}
+
+	&__content {
+		color: #fefefe;
+		font-size: 1.4rem;
+		font-weight: 400;
+		line-height: 2.2rem;
+		position: absolute;
+		top: 33px;
+		left: 258px;
+
+		&__block {
+			float: left;
+			width: 50%;
+			margin-bottom: 4rem;
+		}
+
+		&__title {
+			margin-bottom: 1.7rem;
+		}
+		
+		&__phone {}
+	}
+	
+	&__bottom {
+		height: 57px;
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		border-top: 1px solid #fff;
+	}
+
+	&__copiright {
+		color: #fefefe;
+		font-size: 1.2rem;
+		font-weight: 400;
+		line-height: 5.6rem;
+		padding-left: 76px;
+		background: url(../images/copyright-logo.png) 0 50% no-repeat;
+	}
+	
+	&__list {
+		position: absolute;
+		right: 0;
+		top: 0;
+		font-size: 0;
+	}
+	
+	&__item {
+		@extend %inline;
+		
+		&:not(:last-child) {
+			margin-right: 22px;
+		}
+	}
+
+	&__link {
+		color: #fefefe;
+		font-family: $font-tahoma;
+		font-size: 1.3rem;
+		line-height: 5.6rem;
+		font-weight: 400;
+		text-decoration: none;
+	}
+}

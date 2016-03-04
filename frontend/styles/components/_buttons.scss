@@ -1,0 +1,64 @@
+.button {
+	width: auto;
+	height: 3.8rem;
+	padding: 0 13px;
+
+	font-family: $font-tahoma;
+	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: 3.8rem;
+	// line-height: 3.2rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	vertical-align: top;
+	
+	color: #fff;
+	border: 0;
+	background-color: #5790b1;
+	
+	outline: none;
+	display: inline-block;
+	-webkit-appearance: none;
+	transition: border-color $time, background-color $time, color $time;
+
+	&:hover, &:focus {
+		color: #fff;
+		background-color: #0083F5;
+	}
+
+	&__ico {
+		display: block;
+		padding-left: 36px;
+		position: relative;
+		background-repeat: no-repeat;
+		background-position: 0 50%;
+		
+		&:after {
+			width: 1px;
+			height: 2rem;
+			content: "";
+			background-color: #fff;
+			position: absolute;
+			top: 50%;
+			left: 25px;
+			margin-top: -1rem;
+		}
+
+		&_qu {
+			background-image: url(../images/ico-qu.png);
+			background-image: url(../images/ico-qu.svg);
+		}
+	}
+
+	&.disabled {
+		background: #ccc !important;
+		cursor: not-allowed !important;
+		background: #ccc !important;
+
+		&, &:hover {
+			-webkit-box-shadow: none !important;
+			box-shadow:none !important;
+			background: #ccc !important;
+		}
+	}
+}

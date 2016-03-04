@@ -1,0 +1,26 @@
+@@include('./components/meta.html', {
+	"title": "о компании"
+})
+
+<div class="layout-wrapper">
+	
+	@@include('./components/upper.html')
+	
+	@@include('./components/header.html')
+	
+	@@include('./components/navigation.html', {
+		"current": "about"
+	})
+
+	<div class="layout-wrapper__inner" itemprop="mainContentOfPage">
+	
+
+	</div>
+
+</div>
+
+@@include('./components/footer.html', {
+	"current": "about"
+})
+
+@@include('./components/scripts.html')

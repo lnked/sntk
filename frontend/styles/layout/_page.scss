@@ -1,0 +1,43 @@
+.page {
+	
+	&__map {
+		margin-bottom: 37px;
+	}
+
+	&__title {
+		color: #2f3e4f;
+		font-family: $font-pfdin;
+		font-size: 3rem;
+		line-height: 1;
+		overflow: hidden;
+		font-weight: 400;
+		text-align: center;
+		margin-bottom: 54px;
+	
+		&__text {
+			display: inline-block;
+			vertical-align: middle;
+			position: relative;
+
+			&:before, &:after {
+				width: 50rem;
+				height: 1px;
+				position: absolute;
+				top: 50%;
+				margin-top: -1px;
+				content: "";
+				background-color: #98c4d9;
+			}
+
+			&:before {
+				right: 100%;
+				margin-right: 35px;
+			}
+
+			&:after {
+				left: 100%;
+				margin-left: 35px;
+			}
+		}
+	}
+}

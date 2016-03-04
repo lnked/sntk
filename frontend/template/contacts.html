@@ -1,0 +1,26 @@
+@@include('./components/meta.html', {
+	"title": "контакты"
+})
+
+<div class="layout-wrapper">
+	
+	@@include('./components/upper.html')
+	
+	@@include('./components/header.html')
+	
+	@@include('./components/navigation.html', {
+		"current": "contacts"
+	})
+
+	<div class="layout-wrapper__inner" itemprop="mainContentOfPage">
+	
+
+	</div>
+
+</div>
+
+@@include('./components/footer.html', {
+	"current": "contacts"
+})
+
+@@include('./components/scripts.html')

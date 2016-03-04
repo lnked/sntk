@@ -1,0 +1,36 @@
+.navigation {
+	overflow: hidden;
+	background-color: $blue-color;
+	height: 4.7rem;
+	line-height: 5.3rem;
+
+	&_footer {
+		height: 6.5rem;
+		line-height: 7.2rem;
+		background-color: $gray2-color;
+	}
+	
+	&__list {
+		@extend %layout;
+		display: table;
+	}
+	
+	&__item {
+		display: table-cell;
+	}
+
+	&__link {
+		display: block;
+		color: #fff;
+		font-family: $font-pfdin;
+		font-size: 1.6rem;
+		font-weight: 400;
+		text-decoration: none;
+		text-transform: uppercase;
+		vertical-align: top;
+
+		&_footer {
+			color: $blue-color;
+		}
+	}
+}

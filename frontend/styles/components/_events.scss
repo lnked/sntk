@@ -1,0 +1,105 @@
+.events {
+	width: 100%;
+	position: relative;
+	position: absolute;
+	left: 0;
+	top: 0;
+
+	&__wrapper {
+		width: 100%;
+		padding: 75px 10px 25px 30px;
+		position: relative;
+	}
+
+	.slick-list {
+		overflow: hidden;
+	}
+
+	&__navigation {
+		width: 3.9rem;
+		height: 3.9rem;
+		display: block;
+		position: absolute;
+		top: 0;
+		z-index: 200;
+		cursor: pointer;
+		border: 0;
+		background: url(../images/arrow-blue.png) no-repeat;
+		transition: opacity $time;
+
+		&:hover {
+			opacity: 1;
+		}
+
+		&_prev {
+			right: 40px;
+			background-position: 0 0;
+		}
+
+		&_next {
+			right: 0;
+			background-position: 100% 0;
+		}
+	}
+	
+	&__item {
+		width: 50%;
+		height: 232px;
+		float: left;
+		outline: none;
+		position: relative;
+
+		&__inner {
+			max-width: 250px;
+		}
+
+		&__date {
+			color: #0a4b82;
+			font-size: 1.3rem;
+			line-height: 1;
+			font-weight: 700;
+			margin-bottom: 18px;
+		}
+
+		&__title {
+			color: #000;
+			font-size: 1.3rem;
+			font-weight: 700;
+			line-height: 2.2rem;
+			margin-bottom: 15px;
+			text-transform: uppercase;
+		}
+
+		&__link {
+			color: #000;
+			text-decoration: none;
+		}
+
+		&__content {
+			color: #000;
+			font-size: 1.2rem;
+			font-weight: 400;
+			padding-right: 10px;
+			overflow: hidden;
+			max-height: 80px;
+		}
+
+		&__more {
+			clear: both;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+
+			&__link {
+				color: #000;
+				padding: 0 10px;
+				height: 2.2rem;
+				cursor: pointer;
+				line-height: 2.2rem;
+				display: inline-block;
+				text-decoration: none;
+				background-color: #c6c6c6;
+			}
+		}
+	}
+}

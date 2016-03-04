@@ -1,0 +1,83 @@
+.layout-header {
+	height: 88px;
+
+	&__upper {
+		width: 100%;
+		height: 3.9rem;
+		background-color: $gray-color;
+	}
+
+	&__wrapper {
+		@extend %layout;
+	}
+
+	&__logo {
+		position: absolute;
+		left: 0;
+		top: 50%;
+		margin-top: -2.5rem;
+	}
+
+	&__col {
+		position: absolute;
+		top: 16px;
+		float: left;
+
+		&_x1 {
+			left: 160px;
+		}
+
+		&_x2 {
+			left: 424px;
+		}
+		
+		&_x3 {
+			left: 607px;
+		}
+
+		&__title {
+			color: #7c7c7c;
+			font-family: $font-tahoma;
+			font-size: 1.2rem;
+			font-weight: 400;
+			margin-bottom: 17px;
+		}
+
+		&__phone {
+			color: #2c2c2c;
+			font-family: $font-tahoma;
+			font-size: 1.8rem;
+			font-weight: 400;
+			text-decoration: none;
+			padding-left: 22px;
+			background-repeat: no-repeat;
+			background-position: 0 50%;
+			background-image: url(../images/phone.png);
+		}
+
+		&__link {
+			color: #0a4b82;
+			font-family: $font-tahoma;
+			font-size: 1.3rem;
+			font-weight: 400;
+			text-decoration: underline;
+			padding-left: 23px;
+			background-repeat: no-repeat;
+			background-position: 0 50%;
+
+			&_email {
+				background-image: url(../images/mail.png);	
+			}
+
+			&_question {
+				background-image: url(../images/question.png);
+			}
+		}
+	}
+
+	&__button {
+		position: absolute;
+		right: 0;
+		top: 20px;
+	}
+}

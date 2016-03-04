@@ -1,0 +1,146 @@
+@@include('./components/meta.html', {
+	"title": "Главная"
+})
+
+@@include('./popups/popup.html')
+
+<div class="layout-wrapper">
+	@@include('./components/upper.html')
+	
+	@@include('./components/header.html')
+	
+	@@include('./components/navigation.html', {
+		"current": "main"
+	})
+
+	<div class="layout-wrapper__inner" itemprop="mainContentOfPage">
+		
+		<div class="layout-wrapper__content">
+			<div class="page__map"></div>
+			<h4 class="page__title"><span class="page__title__text">ОСНОВНЫЕ УСЛУГИ</span></h4>
+
+			@@include('./components/carousel-icons.html')
+		</div>
+
+		<section class="columns">
+			<div class="columns__wrapper clearfix">
+				<article class="columns__item columns__item_about">
+					<h3 class="columns__title columns__title_white">О компании</h3>
+					<div class="columns__content columns__content_white">
+						ЗАО «Специальная научно-техническая компания» (ЗАО «СНТК») – современная, динамично развивающаяся компания, <br>основными направлениями деятельности <br>которой является оказание услуг в области защиты информации и защиты государственной тайны.
+					</div>
+					<div class="columns__more"><a href="" class="columns__more__link">подробнее</a></div>
+				</article>
+
+				<article class="columns__item columns__item_events">
+					<h3 class="columns__title">События</h3>
+
+					<div class="events">
+						<div class="events__wrapper js-carousel clearfix" data-viewcount="2" data-classname="events">
+							
+							<div class="events__item slick-slide">
+								<div class="events__item__inner">
+									<div class="events__item__date">03.02.2016</div>
+									<div class="events__item__title">
+										<a href="" class="events__item__link">Эвэртё пэрпэтюа эож ты. Ты конгуы вяш, про апэриам дёжкэрэ</a>
+									</div>
+									<div class="events__item__content">Эвэртё пэрпэтюа эож ты. Ты конгуы волуптариа вяш, про апэриам дёжкэрэ ку, хёнк омнеж оффекйяж вим эи. Квюач лаборамюз мэль нэ, еюж емпэтюсъ ыкчпэтында дёжжэнтиюнт экз. Вим эа граэкйж чингюльищ.</div>
+									
+									<div class="events__item__more">
+										<a href="" class="events__item__more__link">Подробнее</a>
+									</div>
+								</div>
+							</div>
+							
+							<div class="events__item slick-slide">
+								<div class="events__item__inner">
+									<div class="events__item__date">03.02.2016</div>
+									<div class="events__item__title">
+										<a href="" class="events__item__link">Эвэртё пэрпэтюа эож ты. Ты конгуы вяш, про апэриам дёжкэрэ</a>
+									</div>
+									<div class="events__item__content">Эвэртё пэрпэтюа эож ты. Ты конгуы волуптариа вяш, про апэриам дёжкэрэ ку, хёнк омнеж оффекйяж вим эи. Квюач лаборамюз мэль нэ, еюж емпэтюсъ ыкчпэтында дёжжэнтиюнт экз. Вим эа граэкйж чингюльищ.</div>
+
+									<div class="events__item__more">
+										<a href="" class="events__item__more__link">Подробнее</a>
+									</div>
+								</div>
+							</div>
+							
+							<div class="events__item slick-slide">
+								<div class="events__item__inner">
+									<div class="events__item__date">03.02.2016</div>
+									<div class="events__item__title">
+										<a href="" class="events__item__link">Эвэртё пэрпэтюа эож ты. Ты конгуы вяш, про апэриам дёжкэрэ</a>
+									</div>
+									<div class="events__item__content">Эвэртё пэрпэтюа эож ты. Ты конгуы волуптариа вяш, про апэриам дёжкэрэ ку, хёнк омнеж оффекйяж вим эи. Квюач лаборамюз мэль нэ, еюж емпэтюсъ ыкчпэтында дёжжэнтиюнт экз. Вим эа граэкйж чингюльищ.</div>
+
+									<div class="events__item__more">
+										<a href="" class="events__item__more__link">Подробнее</a>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					
+				</article>
+			</div>
+		</section>
+		
+		<div class="layout-wrapper__content">
+			
+			<div class="fieldset">
+				<div class="fieldset__caption">
+					<div class="fieldset__caption__text">Почему СНТК?</div>
+				</div>
+
+				<div class="fieldset__content">
+
+					<ul class="fieldset__list">
+						<li class="fieldset__list__item">
+							<div class="fieldset__list__item__ico"><img src="./images/file-security.png" alt="" class="fieldset__list__item__ico__src"></div>
+							<div class="fieldset__list__item__title">Специалисты с богатейшим опытом разработки и реализации крупных проектов в области защиты информации</div>
+						</li>
+						
+						<li class="fieldset__list__item">
+							<div class="fieldset__list__item__ico"><img src="./images/visualization-of-data.png" alt="" class="fieldset__list__item__ico__src"></div>
+							<div class="fieldset__list__item__title">Аттестационные испытания на более чем 500 объектах информатизации в 2015 году, в том числе на объектах Федеральной таможенной службы, Федеральной налоговой службы и Министерства внутренних дел России.</div>
+						</li>
+
+						<li class="fieldset__list__item">
+							<div class="fieldset__list__item__ico"><img src="./images/data-settings.png" alt="" class="fieldset__list__item__ico__src"></div>
+							<div class="fieldset__list__item__title">Установка и настройка средств защиты информации в 2015 году на более чем 2000 отдельных рабочих местах</div>
+						</li>
+						
+						<li class="fieldset__list__item fieldset__list__item_nm">
+							<div class="fieldset__list__item__ico"><img src="./images/cellphone-connected-to-the-cloud.png" alt="" class="fieldset__list__item__ico__src"></div>
+							<div class="fieldset__list__item__title">Собственный парк современного оборудования, в том числе мобильных комплексов, удовлетворяющих всем современным требованиям ФСБ России и ФСТЭК России.</div>
+						</li>
+						
+						<li class="fieldset__list__item fieldset__list__item_nm">
+							<div class="fieldset__list__item__ico"><img src="./images/user-profiles-in-connection.png" alt="" class="fieldset__list__item__ico__src"></div>
+							<div class="fieldset__list__item__title">Более 40 сертификатов повышения квалификации в области защиты информации у сотрудников компании</div>
+						</li>
+
+						<li class="fieldset__list__item fieldset__list__item_nm">
+							<div class="fieldset__list__item__ico"><img src="./images/hand-holding-money-bills.png" alt="" class="fieldset__list__item__ico__src"></div>
+							<div class="fieldset__list__item__title">Клиентоориентированные цены</div>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		
+			<h4 class="page__title"><span class="page__title__text">Ключевые заказчики</span></h4>
+			
+			@@include('./components/carousel.html')
+
+		</div>
+	</div>
+</div>
+
+@@include('./components/footer.html', {
+	"current": "main"
+})
+
+@@include('./components/scripts.html')

@@ -1,0 +1,26 @@
+@@include('./components/meta.html', {
+	"title": "направления деятельности"
+})
+
+<div class="layout-wrapper">
+	
+	@@include('./components/upper.html')
+	
+	@@include('./components/header.html')
+	
+	@@include('./components/navigation.html', {
+		"current": "activities"
+	})
+
+	<div class="layout-wrapper__inner" itemprop="mainContentOfPage">
+	
+
+	</div>
+
+</div>
+
+@@include('./components/footer.html', {
+	"current": "activities"
+})
+
+@@include('./components/scripts.html')
