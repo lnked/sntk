@@ -1,0 +1,37 @@
+.map {
+	clear: both;
+	height: 348px;
+	margin-bottom: 37px;
+	background: url(../images/map.jpg) 50% 50% no-repeat;
+
+	&__content {
+		width: 100%;
+		margin: 0 auto;
+		padding-top: 35px;
+		max-width: $layout-width;
+		font-family: $font-pfdin;
+
+		&__count {
+			height: 14rem;
+			color: #0a4b82;
+			font-weight: 300;
+			font-size: 20rem;
+			line-height: .48;
+			padding-top: 4rem;
+			margin-bottom: 30px;
+
+			&__percent {
+				font-size: 10rem;
+			}
+		}
+		
+		&__text {
+			max-width: 44rem;
+			color: #2c2c2c;
+			font-size: 3.3rem;
+			font-weight: 300;
+			line-height: 4.5rem;
+			text-transform: uppercase;
+		}
+	}
+}

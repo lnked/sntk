@@ -90,12 +90,12 @@ lazyRequireTask('tinypng', tasks + 'tinypng', {
 });
 
 lazyRequireTask('deploy', tasks + 'deploy', {
-	app: app + '/**/*'
+	app: app + '**/*'
 });
 
 lazyRequireTask('test', tasks + 'test', {
 	test: path.testfile,
-	app: app + '/**/*'
+	app: app + '**/*'
 });
 
 lazyRequireTask('sprite', tasks + 'sprite', {
@@ -106,7 +106,7 @@ lazyRequireTask('sprite', tasks + 'sprite', {
 
 lazyRequireTask('screenshot', tasks + 'screenshot', {
 	url: config.server.proxy,
-	app: app + '/tmp',
+	app: app + 'tmp',
 	size: path.screenshot
 });
 
@@ -157,7 +157,7 @@ gulp.task('modernizr', function(callback){
 });
 
 gulp.task('webstandards', function(){
-	return gulp.src(app + '/**/*').pipe(standards());
+	return gulp.src(app + '**/*').pipe(standards());
 	callback();
 });
 
