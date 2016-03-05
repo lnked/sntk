@@ -22,7 +22,7 @@
 		
 	&__contacts {
 		position: absolute;
-		left: 0;
+		left: $padding;
 		top: 34px;
 
 		&__block {
@@ -59,8 +59,8 @@
 	&__bottom {
 		height: 57px;
 		position: absolute;
-		left: 0;
-		right: 0;
+		left: $padding;
+		right: $padding;
 		bottom: 0;
 		border-top: 1px solid #fff;
 	}

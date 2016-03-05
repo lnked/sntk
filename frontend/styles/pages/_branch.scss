@@ -1,0 +1,41 @@
+.branch {
+	clear: both;
+	margin-bottom: 4.5rem;
+
+	&__separator { 
+		width: 1px;
+		height: 8.2rem;
+		float: left;
+		margin: 0 14px;
+	    opacity: 0.4;
+		background-color: #626262;
+	}
+
+	&__item {
+		float: left;
+		width: 208px;
+		height: 8.2rem;
+		position: relative;
+
+		&_large {
+			width: 249px;
+		}
+		
+		&__direction {
+			color: #8a8a8a;
+			font-size: 1.3rem;
+			font-weight: 400;
+			line-height: 2.1rem;
+	        margin-top: -4px;
+		}
+
+		&__phone {
+			color: #171717;
+			font-size: 1.5rem;
+			line-height: 1.4rem;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+		}
+	}
+}

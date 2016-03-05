@@ -4,6 +4,7 @@
 
 	&__wrapper {
 		@extend %layout;
+		padding-left: .7rem;
 	}
 	
 	&__list {
@@ -15,7 +16,7 @@
 	}
 
 	&__link {
-		padding: 0 12px;
+		padding: 0 13px;
 		color: #171717;
 		font-family: $font-tahoma;
 		font-size: 1.3rem;
@@ -34,7 +35,7 @@
 	&__search {
 		width: 344px;
 		position: absolute;
-		right: 0;
+		right: $padding;
 		top: 0;
 	}
 }

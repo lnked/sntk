@@ -13,11 +13,20 @@
 	&__list {
 		@extend %layout;
 		display: table;
+		padding: 0 1.2rem 0 0;
 	}
 	
 	&__item {
 		display: table-cell;
 		text-align: center;
+
+		&:first-child {
+			text-align: left;
+		}
+
+		&:last-child {
+			text-align: right;
+		}
 	}
 
 	&__link {

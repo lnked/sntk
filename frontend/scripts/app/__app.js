@@ -279,17 +279,41 @@
 			});
 		},
 
+		changeMap: function(city)
+		{
+			alert("changeMap to " + city);
+		},
+
+		toggleClass: function()
+		{
+			body.on('click', '.js-toggle-class', function(e){
+				var wrapper = $(this).closest('.js-toggle-wrapper');
+
+				if (!$(this).hasClass('current'))
+				{
+					wrapper.find('.current').removeClass('current');
+					$(this).addClass('current');
+
+					_this.changeMap($(this).data('city'));
+				}
+			});
+		},
+
 		init: function()
 		{
+			_this = this;
+
 			this.slickCarousel();
 
 			this.initPopup();
+
 			this.initMask();
 			this.initSelect();
 			this.initSandwich();
 			this.hoverBind();
+			this.toggleClass();
 
-			this.ajaxForm.init();
+			// this.ajaxForm.init();
 		}
 
 	};
