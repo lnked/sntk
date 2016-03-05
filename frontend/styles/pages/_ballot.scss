@@ -1,0 +1,43 @@
+.ballot {
+	clear: both;
+	
+	&:not(:last-child) {
+		margin-bottom: 6rem;
+	}
+
+	&:last-child {
+		margin-bottom: 4rem;
+	}
+
+	&__item {
+		width: 50%;
+		float: left;
+		padding: 0 45px;
+
+		&:first-child {
+			padding-left: 0;
+		}
+
+		&:last-child {
+			padding-right: 0;
+		}
+
+		&__title {
+			color: #242424;
+			font-size: 1.7rem;
+			line-height: 1.2;
+			font-weight: 700;
+			margin-bottom: 12px;
+		}
+
+		&__description {
+			color: #2f3e4f;
+			font-size: 1.3rem;
+			line-height: 1.3;
+			font-weight: 400;
+			margin-bottom: 16px;
+		}
+
+		&__button {}
+	}
+}

@@ -1,22 +1,22 @@
 @@include('./components/meta.html', {
-	"title": "о компании"
+	"title": "Материально-техническая база"
 })
 
 <div class="layout-wrapper">
 	
-	@@include('./components/upper.html')
+	@@include('./components/upper.html', {
+		"current": "technical-base"
+	})
 	
 	@@include('./components/header.html')
 	
-	@@include('./components/navigation.html', {
-		"current": "about"
-	})
+	@@include('./components/navigation.html')
 
 	<div class="layout-wrapper__inner" itemprop="mainContentOfPage">
 		
 		<div class="layout-wrapper__content">
 		
-			<h4 class="page__title"><span class="page__title__text">АНКЕТЫ</span></h4>
+			<h4 class="page__title"><span class="page__title__text"></span></h4>
 
 		</div>
 
@@ -24,8 +24,6 @@
 
 </div>
 
-@@include('./components/footer.html', {
-	"current": "about"
-})
+@@include('./components/footer.html')
 
 @@include('./components/scripts.html')

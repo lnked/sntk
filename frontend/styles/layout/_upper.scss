@@ -12,19 +12,23 @@
 	
 	&__item {
 		@extend %inline;
-		
-		&:not(:last-child) {
-			margin-right: 22px;
-		}
 	}
 
 	&__link {
+		padding: 0 12px;
 		color: #171717;
 		font-family: $font-tahoma;
 		font-size: 1.3rem;
 		line-height: 3.9rem;
 		font-weight: 400;
+		display: block;
+		letter-spacing: -.015ex;
 		text-decoration: none;
+
+		&.current {
+			color: #fff;
+			background-color: $blue-color;
+		}
 	}
 
 	&__search {

@@ -2,11 +2,11 @@
 	
 	<nav class="layout-footer__navigation navigation navigation_footer" role="navigation">
 		<ul class="navigation__list">
-			<li class="navigation__item"><a href="./activities.html" class="navigation__link navigation__link_footer @@if (current == 'activities') {current}">направления деятельности</a></li>
-			<li class="navigation__item"><a href="./about.html" class="navigation__link navigation__link_footer @@if (current == 'about') {current}">о компании</a></li>
-			<li class="navigation__item"><a href="./license.html" class="navigation__link navigation__link_footer @@if (current == 'license') {current}">лицензии и сертификаты</a></li>
-			<li class="navigation__item"><a href="./customers.html" class="navigation__link navigation__link_footer @@if (current == 'customers') {current}">заказчики</a></li>
-			<li class="navigation__item"><a href="./contacts.html" class="navigation__link navigation__link_footer @@if (current == 'contacts') {current}">контакты</a></li>
+			<li class="navigation__item"><a href="./activities.html" class="navigation__link navigation__link_footer @@if (typeof current !== 'undefined' && current == 'activities') {current}">направления деятельности</a></li>
+			<li class="navigation__item"><a href="./about.html" class="navigation__link navigation__link_footer @@if (typeof current !== 'undefined' && current == 'about') {current}">о компании</a></li>
+			<li class="navigation__item"><a href="./license.html" class="navigation__link navigation__link_footer @@if (typeof current !== 'undefined' && current == 'license') {current}">лицензии и сертификаты</a></li>
+			<li class="navigation__item"><a href="./customers.html" class="navigation__link navigation__link_footer @@if (typeof current !== 'undefined' && current == 'customers') {current}">заказчики</a></li>
+			<li class="navigation__item"><a href="./contacts.html" class="navigation__link navigation__link_footer @@if (typeof current !== 'undefined' && current == 'contacts') {current}">контакты</a></li>
 		</ul>
 	</nav>
 

@@ -42,11 +42,62 @@
 		position: relative;
 		text-align: center;
 	}
+	
+	&__overlap {
+		position: absolute;
+		top: 0;
+		width: 70px;
+		height: 80px;
+		z-index: 100;
+		background-color: #fff;
+
+		&_before {
+			left: 0;
+		}
+
+		&_after {
+			right: 0;
+		}
+	}
 
 	&__item {
 		width: 25%;
 		float: left;
 		outline: none;
+		position: relative;
+		z-index: 20;
+
+		&__border {
+			position: relative;
+			width: 12.9rem;
+			height: 0.1rem;
+			z-index: 10;
+			background-color: #98c4d9;
+			position: absolute;
+			left: 50%;
+			top: 40px;
+			margin-left: 56px;
+	
+			&:before, &:after {
+				width: 4px;
+				height: 27px;
+				content: "";
+				position: absolute;
+				top: -13px;
+				background-repeat: no-repeat;
+				background-position: 0 0;
+			}
+
+			&:before {
+				left: -4px;
+				background-image: url(../images/l-arc.png);
+			}
+
+			&:after {
+				right: -4px;
+				background-image: url(../images/r-arc.png);
+			}
+		}
 	
 		&__content {
 			text-align: center;
@@ -59,7 +110,7 @@
 				border-radius: 50%;
 				margin: 0 auto 18px;
 				border: 1px solid #0a4b82;
-				background: url(../images/shield.png) no-repeat 50% 50%;
+				background: #fff url(../images/shield.png) no-repeat 50% 50%;
 				background-size: 2.6rem 3.2rem;
 			}
 
