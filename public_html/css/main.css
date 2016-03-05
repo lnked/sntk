@@ -1548,9 +1548,9 @@ ul.slick-dots li.slick-active button {
     padding: 0;
     background: none; }
     .pagination__item:not(:first-child) {
-      margin-left: 2px; }
+      margin-left: 6px; }
     .pagination__item:not(:last-child) {
-      margin-right: 2px; }
+      margin-right: 6px; }
     .pagination__item__text {
       text-decoration: none;
       color: #333;
@@ -1559,53 +1559,65 @@ ul.slick-dots li.slick-active button {
       font-weight: 700;
       line-height: 40px;
       line-height: 4rem; }
-    .pagination__item__page, .pagination__item__page:visited {
-      width: 40px;
-      width: 4rem;
-      height: 40px;
-      height: 4rem;
-      display: block;
-      vertical-align: top;
-      background-color: #fff;
-      border: 4px solid #0a4b82;
-      text-decoration: none;
-      text-align: center;
-      outline: none;
-      color: #333;
-      font-size: 15px;
-      font-size: 1.5rem;
-      font-weight: 700;
-      line-height: 32px;
-      line-height: 3.2rem;
-      -webkit-transition: border-color 0.4s;
-      transition: border-color 0.4s;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box; }
-    .pagination__item__page:hover {
-      border-color: #0a4b82; }
-    .pagination__item__page.current, .pagination__item__page.current:hover {
-      border-color: #0a4b82; }
+    .pagination__item__page {
+      outline: 1px solid lime; }
+      .pagination__item__page, .pagination__item__page:visited {
+        width: 31px;
+        width: 3.1rem;
+        height: 30px;
+        height: 3rem;
+        text-align: center;
+        display: block;
+        vertical-align: top;
+        text-decoration: none;
+        text-align: center;
+        outline: none;
+        color: #434343;
+        font-size: 12px;
+        font-size: 1.2rem;
+        font-weight: 700;
+        line-height: 30px;
+        line-height: 3rem;
+        text-transform: uppercase;
+        -webkit-transition: background-color 0.4s;
+        transition: background-color 0.4s;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box; }
+      .pagination__item__page.visited {
+        color: #b6b6b6; }
+      .pagination__item__page.current, .pagination__item__page.current:hover {
+        color: #fff;
+        background-color: #0a4b82;
+        -webkit-border-radius: 50%;
+        border-radius: 50%; }
     .pagination__item__nav {
       position: relative;
-      margin: 0 16px; }
-      .pagination__item__nav, .pagination__item__nav:before {
-        width: 13px;
-        height: 40px;
-        display: block;
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
-        background-size: 13px 20px; }
-      .pagination__item__nav:before {
-        position: absolute;
-        content: "";
-        left: 0;
-        top: 0;
-        opacity: 0;
-        -webkit-transition: opacity 0.4s;
-        transition: opacity 0.4s; }
-      .pagination__item__nav:hover:before {
-        opacity: 1; }
+      color: #0a4b82;
+      font-size: 13px;
+      font-size: 1.3rem;
+      font-weight: 700;
+      line-height: 30px;
+      line-height: 3rem;
+      text-decoration: none;
+      background-repeat: no-repeat; }
+      .pagination__item__nav.disabled {
+        color: #949494;
+        cursor: default; }
+      .pagination__item__nav_prev {
+        margin-right: 30px;
+        padding-left: 19px;
+        background-position: 0 50%;
+        background-image: url(../images/before-arrow-disabled.png); }
+        .pagination__item__nav_prev.disabled {
+          background-image: url(../images/before-arrow-disabled.png); }
+      .pagination__item__nav_next {
+        margin-left: 30px;
+        padding-right: 19px;
+        background-image: url(../images/after-arrow.png);
+        background-position: 100% 50%; }
+        .pagination__item__nav_next.disabled {
+          background-image: url(../images/after-arrow-disabled.png); }
 
 .ballot {
   clear: both; }
@@ -1641,8 +1653,8 @@ ul.slick-dots li.slick-active button {
 .events-list {
   font-size: 0;
   line-height: 1;
-  margin-bottom: 100px;
-  margin-bottom: 10rem; }
+  margin-bottom: 2px;
+  margin-bottom: .2rem; }
 
 .events-item {
   width: 229px;
@@ -1650,21 +1662,38 @@ ul.slick-dots li.slick-active button {
   height: 285px;
   height: 28.5rem;
   float: left;
-  background-color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 40px;
   margin-bottom: 4rem;
+  background-color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
   -webkit-transition: -webkit-box-shadow 0.4s;
   transition: -webkit-box-shadow 0.4s;
   transition: box-shadow 0.4s;
   transition: box-shadow 0.4s, -webkit-box-shadow 0.4s; }
   .events-item:not(:nth-child(4n+4)) {
     margin-right: 15px; }
+  .events-item__image {
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden; }
+    .events-item__image__src {
+      max-width: 100%;
+      height: auto;
+      -webkit-transition: -webkit-transform 0.4s;
+      transition: -webkit-transform 0.4s;
+      transition: transform 0.4s;
+      transition: transform 0.4s, -webkit-transform 0.4s; }
   .events-item.hover {
     -webkit-box-shadow: 0 0 2rem rgba(0, 0, 0, 0.29);
     box-shadow: 0 0 2rem rgba(0, 0, 0, 0.29); }
+  .events-item.hover .events-item__image__src {
+    -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    transform: scale(1.15); }
   .events-item__content {
-    padding: 20px; }
+    padding: 20px 20px 0; }
   .events-item__title {
     color: #000;
     font-size: 14px;
@@ -1674,7 +1703,8 @@ ul.slick-dots li.slick-active button {
     line-height: 2.5rem;
     max-height: 48px;
     margin-top: -8px;
-    overflow: hidden; }
+    overflow: hidden;
+    margin-bottom: 25px; }
   .events-item__link {
     color: #000;
     text-decoration: none; }
@@ -1692,6 +1722,24 @@ ul.slick-dots li.slick-active button {
     font-size: 12px;
     font-size: 1.2rem;
     font-weight: 400; }
+  .events-item__footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 6px 20px 18px; }
+  .events-item__more {
+    width: 23px;
+    width: 2.3rem;
+    height: 23px;
+    height: 2.3rem;
+    display: block;
+    position: absolute;
+    right: 25px;
+    top: 0;
+    background: url(../images/more.png) 50% 50% no-repeat;
+    background-image: url(../images/more.svg);
+    background-size: 2.3rem 2.3rem; }
 
 .events {
   width: 100%;

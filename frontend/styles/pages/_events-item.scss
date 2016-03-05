@@ -1,32 +1,46 @@
 .events-list {
 	font-size: 0;
 	line-height: 1;
-	margin-bottom: 10rem;
+	margin-bottom: .2rem;
 }
 
 .events-item {
 	width: 22.9rem;
 	height: 28.5rem;
 	float: left;
+	margin-bottom: 4rem;
 	background-color: #fff;
 	font-family: $font-arial;
-	margin-bottom: 4rem;
+	position: relative;
 	transition: box-shadow $time;
 	
 	&:not(:nth-child(4n+4)) {
 		margin-right: 15px;
 	}
 	
-	&.hover {
-		box-shadow: 0 0 2rem rgba(0, 0, 0, 0.29);	
+	&__image {
+		display: block;
+		font-size: 0;
+		line-height: 0;
+		overflow: hidden;
+
+		&__src {
+			max-width: 100%;
+			height: auto;
+			transition: transform $time;
+		}
 	}
 
-	&__image {
-		&__src {}
+	&.hover {
+		box-shadow: 0 0 2rem rgba(0, 0, 0, 0.29);
+	}
+
+	&.hover &__image__src {
+		transform: scale(1.15);
 	}
 
 	&__content {
-		padding: 20px;
+		padding: 20px 20px 0;
 	}
 
 	&__title {
@@ -37,6 +51,7 @@
 		max-height: 48px;
 		margin-top: -8px;
 		overflow: hidden;
+		margin-bottom: 25px;
 	}
 
 	&__link {
@@ -57,5 +72,25 @@
 		color: #afafaf;
 		font-size: 1.2rem;
 		font-weight: 400;
+	}
+	
+	&__footer {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		padding: 6px 20px 18px;
+	}
+
+	&__more {
+		width: 2.3rem;
+		height: 2.3rem;
+		display: block;
+		position: absolute;
+		right: 25px;
+		top: 0;
+		background: url(../images/more.png) 50% 50% no-repeat;
+		background-image: url(../images/more.svg);
+		background-size: 2.3rem 2.3rem;
 	}
 }
