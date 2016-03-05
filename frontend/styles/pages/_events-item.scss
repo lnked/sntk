@@ -1,0 +1,61 @@
+.events-list {
+	font-size: 0;
+	line-height: 1;
+	margin-bottom: 10rem;
+}
+
+.events-item {
+	width: 22.9rem;
+	height: 28.5rem;
+	float: left;
+	background-color: #fff;
+	font-family: $font-arial;
+	margin-bottom: 4rem;
+	transition: box-shadow $time;
+	
+	&:not(:nth-child(4n+4)) {
+		margin-right: 15px;
+	}
+	
+	&.hover {
+		box-shadow: 0 0 2rem rgba(0, 0, 0, 0.29);	
+	}
+
+	&__image {
+		&__src {}
+	}
+
+	&__content {
+		padding: 20px;
+	}
+
+	&__title {
+		color: #000;
+		font-size: 1.4rem;
+		font-weight: 700;
+		line-height: 2.5rem;
+		max-height: 48px;
+		margin-top: -8px;
+		overflow: hidden;
+	}
+
+	&__link {
+		color: #000;
+		text-decoration: none;
+	}
+
+	&__description {
+		color: #191919;
+		font-size: 1.3rem;
+		font-weight: 400;
+		line-height: 2rem;
+		max-height: 139px;
+		overflow: hidden;
+	}
+
+	&__date {
+		color: #afafaf;
+		font-size: 1.2rem;
+		font-weight: 400;
+	}
+}

@@ -268,6 +268,17 @@
 			});
 		},
 
+		hoverBind: function()
+		{
+			body.on('mouseenter', '.js-bind-hover', function(){
+				$(this).addClass('hover');
+			});
+
+			body.on('mouseleave', '.js-bind-hover', function(){
+				$(this).removeClass('hover');
+			});
+		},
+
 		init: function()
 		{
 			this.slickCarousel();
@@ -276,6 +287,7 @@
 			this.initMask();
 			this.initSelect();
 			this.initSandwich();
+			this.hoverBind();
 
 			this.ajaxForm.init();
 		}

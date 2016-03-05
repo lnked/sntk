@@ -2,7 +2,7 @@
 	"title": "События"
 })
 
-<div class="layout-wrapper">
+<div class="layout-wrapper layout-wrapper_light">
 	
 	@@include('./components/upper.html', {
 		"current": "events"
@@ -16,7 +16,191 @@
 		
 		<div class="layout-wrapper__content">
 		
-			<h4 class="page__title"><span class="page__title__text"></span></h4>
+			@@include('./components/breadcrumbs.html', {
+				"page1": "Главная",
+				"page2": "События",
+				"page3": ""
+			})
+			
+			<h4 class="page__title"><span class="page__title__text">события</span></h4>
+			
+			<section class="events-list clearfix">
+
+				<article class="events-item js-bind-hover" itemscope itemtype="http://schema.org/Event">
+					<div class="events-item__content">
+						<div class="events-item__title">
+							<a href="" class="events-item__link" itemprop="url"><span itemprop="name">Пагода в доме</span></a>
+						</div>
+
+						<div class="events-item__description" itemprop="description">
+							У нас в фонде есть теория, что чиновники любят селиться у воды. Почти всегда она подтверждается практикой. Для начала открываем любую спутниковую карту и рассматриваем, скажем, Подмосковье. На фоне разрушенных деревень и кладбищ выделяются ухоженные ландшафты. Представители ведомств обычно собираются в одном месте, так что можно сразу проверить несколько участков. Осталось эти участки выделить и получить их координаты — в картах «Яндекса» это делается нажатием правой кнопки мыши.
+						</div>
+
+						<div class="events-item__date" itemprop="startDate" content="2014-04-17T00:00">17 апреля 2014</div>
+					</div>
+				</article>
+
+				<article class="events-item js-bind-hover" itemscope itemtype="http://schema.org/Event">
+					<a href="" class="events-item__image">
+						<img src="./images/events/1.jpg" class="events-item__image__src" itemprop="image" alt="">
+					</a>
+
+					<div class="events-item__content">
+						<div class="events-item__title">
+							<a href="" class="events-item__link" itemprop="url"><span itemprop="name">В российском МИД пообещали ответить на канадские санкции</span></a>
+						</div>
+
+						<div class="events-item__date" itemprop="startDate" content="2014-04-17T00:00">17 апреля 2014</div>
+					</div>
+				</article>
+
+				<article class="events-item js-bind-hover" itemscope itemtype="http://schema.org/Event">
+					<a href="" class="events-item__image">
+						<img src="./images/events/2.jpg" class="events-item__image__src" itemprop="image" alt="">
+					</a>
+
+					<div class="events-item__content">
+						<div class="events-item__title">
+							<a href="" class="events-item__link" itemprop="url"><span itemprop="name">«Система» сделала заявление для Лондонской биржи в связи с арестом Евтушенкова</span></a>
+						</div>
+
+						<div class="events-item__date" itemprop="startDate" content="2014-04-17T00:00">17 апреля 2014</div>
+					</div>
+				</article>
+
+				<article class="events-item js-bind-hover" itemscope itemtype="http://schema.org/Event">
+					<div class="events-item__content">
+						<div class="events-item__title">
+							<a href="" class="events-item__link" itemprop="url"><span itemprop="name">Пятиминутный путеводитель по исчезающим чиновникам</span></a>
+						</div>
+
+						<div class="events-item__description" itemprop="description">
+							C 5 по 16 марта 2015 года глава государства не появлялся на публичных мероприя­тиях, а государственные телеканалы выдавали в эфир записанные заранее сюже­ты. Пресс-секретарь президента Дмитрий Песков опровергал слухи об исчезно­вении, но в прессе высказывались различные версии произошедшего:
+						</div>
+
+						<div class="events-item__date" itemprop="startDate" content="2014-04-17T00:00">17 апреля 2014</div>
+					</div>
+				</article>
+
+				<!-- -->
+
+				<article class="events-item js-bind-hover" itemscope itemtype="http://schema.org/Event">
+					<a href="" class="events-item__image">
+						<img src="./images/events/3.jpg" class="events-item__image__src" itemprop="image" alt="">
+					</a>
+					
+					<div class="events-item__content">
+						<div class="events-item__title">
+							<a href="" class="events-item__link" itemprop="url"><span itemprop="name">Турагентства обяжут страховать ответственность перед клиентами</span></a>
+						</div>
+
+						<div class="events-item__date" itemprop="startDate" content="2014-04-17T00:00">17 апреля 2014</div>
+					</div>
+				</article>
+
+				<article class="events-item js-bind-hover" itemscope itemtype="http://schema.org/Event">
+					<a href="" class="events-item__image">
+						<img src="./images/events/4.jpg" class="events-item__image__src" itemprop="image" alt="">
+					</a>
+					
+					<div class="events-item__content">
+						<div class="events-item__title">
+							<a href="" class="events-item__link" itemprop="url"><span itemprop="name">Украина попросила у Евросоюза еще два миллиарда евро</span></a>
+						</div>
+
+						<div class="events-item__date" itemprop="startDate" content="2014-04-17T00:00">17 апреля 2014</div>
+					</div>
+				</article>
+
+				<article class="events-item js-bind-hover" itemscope itemtype="http://schema.org/Event">
+					<a href="" class="events-item__image">
+						<img src="./images/events/5.jpg" class="events-item__image__src" itemprop="image" alt="">
+					</a>
+
+					<div class="events-item__content">
+						<div class="events-item__title">
+							<a href="" class="events-item__link" itemprop="url"><span itemprop="name">В Госдуме создадут собственный хор</span></a>
+						</div>
+
+						<div class="events-item__date" itemprop="startDate" content="2014-04-17T00:00">17 апреля 2014</div>
+					</div>
+				</article>
+
+				<article class="events-item js-bind-hover" itemscope itemtype="http://schema.org/Event">
+					<a href="" class="events-item__image">
+						<img src="./images/events/6.jpg" class="events-item__image__src" itemprop="image" alt="">
+					</a>
+
+					<div class="events-item__content">
+						<div class="events-item__title">
+							<a href="" class="events-item__link" itemprop="url"><span itemprop="name">Ученые сняли молекулу в движении</span></a>
+						</div>
+
+						<div class="events-item__date" itemprop="startDate" content="2014-04-17T00:00">17 апреля 2014</div>
+					</div>
+				</article>
+
+				<!--  -->
+
+				<article class="events-item js-bind-hover" itemscope itemtype="http://schema.org/Event">
+					<div class="events-item__content">
+						<div class="events-item__title">
+							<a href="" class="events-item__link" itemprop="url"><span itemprop="name">Apple решила помочь Android-пользователям перейти на iPhone</span></a>
+						</div>
+
+						<div class="events-item__description" itemprop="description">
+							C 5 по 16 марта 2015 года глава государства не появлялся на публичных мероприя­тиях, а государственные телеканалы выдавали в эфир записанные заранее сюже­ты. Пресс-секретарь президента Дмитрий Песков опровергал слухи об исчезно­вении, но в прессе высказывались различные версии произошедшего:
+						</div>
+
+						<div class="events-item__date" itemprop="startDate" content="2014-04-17T00:00">17 апреля 2014</div>
+					</div>
+				</article>
+
+				<article class="events-item js-bind-hover" itemscope itemtype="http://schema.org/Event">
+					<a href="" class="events-item__image">
+						<img src="./images/events/7.jpg" class="events-item__image__src" itemprop="image" alt="">
+					</a>
+				
+					<div class="events-item__content">
+						<div class="events-item__title">
+							<a href="" class="events-item__link" itemprop="url"><span itemprop="name">Пылающие недра</span></a>
+						</div>
+
+						<div class="events-item__date" itemprop="startDate" content="2014-04-17T00:00">17 апреля 2014</div>
+					</div>
+				</article>
+
+				<article class="events-item js-bind-hover" itemscope itemtype="http://schema.org/Event">
+					<div class="events-item__content">
+						<div class="events-item__title">
+							<a href="" class="events-item__link" itemprop="url"><span itemprop="name">МГУ поднялся на шесть позиций в рейтинге лучших мировых вузов</span></a>
+						</div>
+
+						<div class="events-item__description" itemprop="description">
+							C 5 по 16 марта 2015 года глава государства не появлялся на публичных мероприя­тиях, а государственные телеканалы выдавали в эфир записанные заранее сюже­ты. Пресс-секретарь президента Дмитрий Песков опровергал слухи об исчезно­вении, но в прессе высказывались различные версии произошедшего:
+						</div>
+
+						<div class="events-item__date" itemprop="startDate" content="2014-04-17T00:00">17 апреля 2014</div>
+					</div>
+				</article>
+
+				<article class="events-item js-bind-hover" itemscope itemtype="http://schema.org/Event">
+					<a href="" class="events-item__image">
+						<img src="./images/events/8.jpg" class="events-item__image__src" itemprop="image" alt="">
+					</a>
+
+					<div class="events-item__content">
+						<div class="events-item__title">
+							<a href="" class="events-item__link" itemprop="url"><span itemprop="name">Классическая история iPod</span></a>
+						</div>
+
+						<div class="events-item__date" itemprop="startDate" content="2014-04-17T00:00">17 апреля 2014</div>
+					</div>
+				</article>
+
+			</section>
+
+			@@include('./components/pagination.html')
 
 		</div>
 

@@ -42,12 +42,17 @@
 		margin-left: 48.1rem;
 	}
 
-	&_main {
-		
+	&_light &__inner {
+		background-color: $gray3-color;
 	}
 
 	&__inner {
+		padding-top: 13px;
 		padding-bottom: $footer-height;
+
+		&_main {
+			padding-top: 1px;
+		}
 	}
 
 	&__content {

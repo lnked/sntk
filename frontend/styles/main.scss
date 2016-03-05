@@ -29,11 +29,11 @@
 @import "components/breadcrumbs";
 @import "components/selectbox";
 @import "components/carousel";
-@import "components/events";
 @import "components/map";
 @import "components/fieldset";
+@import "components/pagination";
 
-@import "pages/ballot";
+@import "pages/*";
 
 @import "vendor/magnific-settings";
 @import "vendor/magnific-popup";
