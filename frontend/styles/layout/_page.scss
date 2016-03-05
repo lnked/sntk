@@ -10,9 +10,10 @@
 		margin-bottom: 54px;
 	
 		&__text {
+			position: relative;
 			display: inline-block;
 			vertical-align: middle;
-			position: relative;
+			text-transform: uppercase;
 
 			&:before, &:after {
 				width: 50rem;
@@ -34,5 +35,22 @@
 				margin-left: 35px;
 			}
 		}
+	}
+}
+
+.show-file {
+	color: #0a4b82;
+	font-size: 1.3rem;
+	font-weight: 400;
+	line-height: 2.4rem;
+	padding-left: 3.3rem;
+	display: inline-block;
+	text-decoration: underline;
+	background: url(../images/ico-pdf.png) 0 50% no-repeat;
+	background-image: url(../images/ico-pdf.svg);
+	background-size: 2.1rem 2.4rem;
+
+	&:hover {
+		text-decoration: none;
 	}
 }

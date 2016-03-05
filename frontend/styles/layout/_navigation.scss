@@ -2,11 +2,11 @@
 	overflow: hidden;
 	background-color: $blue-color;
 	height: 4.7rem;
-	line-height: 5.3rem;
+	line-height: 4.7rem;
 	
 	&_footer {
 		height: 6.5rem;
-		line-height: 7.2rem;
+		line-height: 6.5rem;
 		background-color: $gray2-color;
 	}
 	
@@ -17,20 +17,34 @@
 	
 	&__item {
 		display: table-cell;
+		text-align: center;
 	}
 
 	&__link {
-		display: block;
 		color: #fff;
+		height: 3.6rem;
 		font-family: $font-pfdin;
 		font-size: 1.6rem;
+		line-height: 4.1rem;
+		display: inline-block;
+		vertical-align: middle;
 		font-weight: 400;
+		padding: 0 20px;
 		text-decoration: none;
 		text-transform: uppercase;
-		vertical-align: top;
+
+		&.current {
+			color: $blue-color;
+			background-color: #fff;
+		}
 
 		&_footer {
 			color: $blue-color;
+
+			&.current {
+				color: #fff;
+				background-color: $blue-color;
+			}
 		}
 	}
 }
