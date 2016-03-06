@@ -1,3 +1,24 @@
+.firstHeading {
+	font-size: 1.6rem;
+	line-height: 1;
+	font-weight: 700;
+	margin-bottom: 1rem;
+}
+
+.map-content {
+	width: 320px;
+	height: 120px;
+}
+
+.map-bodyContent {
+	font-size: 1.5rem;
+	line-height: 1.5;
+
+	span {
+		color: #969696;
+	}
+}
+
 .contacts {
 	clear: both;
 	height: 41rem;

@@ -1,0 +1,14 @@
+.sidebar {
+    width: 229px;
+	min-height: 1px;
+    margin-left: -229px;
+	float: left;
+
+	&__title {
+		color: #000;
+		font-family: $font-pfdin;
+		font-size: 1.6rem;
+		font-weight: 400;
+		margin-bottom: 1.2rem;
+	}
+}

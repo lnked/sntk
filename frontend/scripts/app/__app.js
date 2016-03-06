@@ -279,11 +279,6 @@
 			});
 		},
 
-		changeMap: function(city)
-		{
-			alert("changeMap to " + city);
-		},
-
 		toggleClass: function()
 		{
 			body.on('click', '.js-toggle-class', function(e){
@@ -293,8 +288,6 @@
 				{
 					wrapper.find('.current').removeClass('current');
 					$(this).addClass('current');
-
-					_this.changeMap($(this).data('city'));
 				}
 			});
 		},

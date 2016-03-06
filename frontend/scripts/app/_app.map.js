@@ -23,26 +23,26 @@
 			});
 
 			var mapOptions = {
-			zoom: 17,
-			zoomControl: !1,
-			panControl: !1,
-			scrollwheel: !1,
-			navigationControl: !1,
-			mapTypeControl: !1,
-			scaleControl: !1,
-			draggable: !0,
-			disableDoubleClickZoom: !1,
-			streetViewControl: !1,
-			overviewMapControl: !1,
-			center: new google.maps.LatLng(latitude, longitude)
+				zoom: 17,
+				zoomControl: !1,
+				panControl: !1,
+				scrollwheel: !1,
+				navigationControl: !1,
+				mapTypeControl: !1,
+				scaleControl: !1,
+				draggable: !0,
+				disableDoubleClickZoom: !1,
+				streetViewControl: !1,
+				overviewMapControl: !1,
+				center: new google.maps.LatLng(latitude, longitude)
 			};
 
 			var image = {
-			url: '/images/marker@2x.png',
-			size: new google.maps.Size(26, 32),
-			origin: new google.maps.Point(0, 0),
-			scaledSize: new google.maps.Size(26, 32),
-			anchor: new google.maps.Point(26, 32)
+				url: '/images/marker@2x.png',
+				size: new google.maps.Size(26, 32),
+				origin: new google.maps.Point(0, 0),
+				scaledSize: new google.maps.Size(26, 32),
+				anchor: new google.maps.Point(26, 32)
 			};
 
 			var map = new google.maps.Map($(container), mapOptions);
