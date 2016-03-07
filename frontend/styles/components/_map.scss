@@ -7,7 +7,7 @@
 	&__content {
 		width: 100%;
 		margin: 0 auto;
-		padding-top: 35px;
+		padding: 35px $padding 0;
 		max-width: $layout-width;
 		font-family: $font-pfdin;
 
@@ -19,6 +19,7 @@
 			line-height: .48;
 			padding-top: 4rem;
 			margin-bottom: 30px;
+			margin-left: -5px;
 
 			&__percent {
 				font-size: 10rem;
