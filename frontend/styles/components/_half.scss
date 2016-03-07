@@ -1,0 +1,38 @@
+.half {
+	clear: both;
+	margin-bottom: 6rem;
+
+	&__item {
+		width: 50%;
+		float: left;
+
+		&:first-child {
+			padding-right: 28px;
+		}
+
+		&:last-child {
+			padding-left: 28px;
+		}
+
+		&__header {
+			color: #2f3e4f;
+			font-size: 2rem;
+			font-weight: 700;
+			line-height: 3.3rem;
+			padding-left: 8rem;
+			padding-top: 1rem;
+			text-transform: uppercase;
+			margin-bottom: 5rem;
+			background-repeat: no-repeat;
+			background-position: 0 50%;
+
+			&_ico1 {
+				background-image: url(../images/hico-1.png);
+			}
+
+			&_ico2 {
+				background-image: url(../images/data-protection.png);	
+			}
+		}
+	}
+}

@@ -292,6 +292,25 @@
 			});
 		},
 
+		initViewer: function()
+		{
+			body.on('click', '.js-viewer-trigger', function(e){
+				e.preventDefault();
+
+				var viewer = $(this).closest('.js-viewer'),
+					image = $(this).attr('href'),
+					count = viewer.find('.js-viewer-count'),
+					total = viewer.find('.js-viewer-total');
+
+				viewer.find('.current').removeClass('current');
+				viewer.find('.js-viewer-image').html('<img src="' + image + '" class="viewer__image__src" alt="">');
+
+				$(this).addClass('current');
+				
+				return !1;
+			});
+		},
+
 		init: function()
 		{
 			_this = this;
@@ -305,6 +324,7 @@
 			this.initSandwich();
 			this.hoverBind();
 			this.toggleClass();
+			this.initViewer();
 
 			// this.ajaxForm.init();
 		}

@@ -5,7 +5,13 @@
 	line-height: 3rem;
 	text-align: center;
 	margin-top: -34px;
-	padding: 3rem 6.4rem;
+	padding: 3rem 3.4rem;
 	margin-bottom: 5rem;
 	background-color: #edf0f2;
+	
+	p {
+		&:not(:last-child) {
+			margin-bottom: 3rem;
+		}
+	}
 }
