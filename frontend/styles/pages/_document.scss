@@ -1,0 +1,75 @@
+.documents {
+	clear: both;
+	font-size: 0;
+	line-height: 1;
+	margin-bottom: 30px;
+
+	&__item {
+		@extend %inline;
+		margin: 0 29px 30px;
+
+		&:nth-child(3n+1) {
+			margin-left: 0;
+		}
+
+		&:nth-child(3n+3) {
+			margin-right: 0;
+		}
+
+		&__image {
+			display: block;
+			height: 29.7rem;
+			text-align: center;
+			line-height: 29.7rem;
+			position: relative;
+			background-color: #e2e8e9;
+			
+			&:before, &:after {
+				width: 100%;
+				height: 100%;
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 0;
+				opacity: 0;
+				background-repeat: no-repeat;
+				background-position: 50% 50%;
+				transition: opacity $time;
+			}
+
+			&:before {
+				z-index: 10;
+				background-color: #0a4b82;
+			}
+
+			&:after {
+				z-index: 11;
+				background-image: url(../images/zoom.png);
+			}
+			
+			&:hover {
+				&:before {
+					opacity: .6;
+				}
+
+				&:after {
+					opacity: 1;
+				}
+			}
+
+			&.s {
+				width: 20.9rem;
+			}
+
+			&.l {
+				width: 42.6rem;
+			}
+			
+			&__src {
+				max-width: 100%;
+				display: inline-block;
+				vertical-align: middle;
+			}
+		}
+	}
+}
