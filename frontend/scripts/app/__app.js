@@ -34,6 +34,11 @@
 				cssPosition: false,
 				wrapper: '.layout-wrapper'
 			});
+
+			$('.open-popup-link').magnificPopup({
+				type:'inline',
+				midClick: true
+			});
 		},
 		
 		initMagnific: function()

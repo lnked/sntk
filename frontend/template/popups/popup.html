@@ -1,34 +1,49 @@
 <div class="overlay" id="overlay"></div>
 
-<svg id="svg-filter"><filter id="svg-blur"><feGaussianBlur in="SourceGraphic" stdDeviation="5"></feGaussianBlur></filter></svg>
-
-@@include('./message.html')
-
-@@include('./test.html')
-
-<script type="text/html" id="tmpl-mustache">
-	<h1>{{header}}</h1>
-	<p>{{content}}</p>
-	<ul>
-		{{#authors}}
-		    <li>{{#accent}} {{.}} {{/accent}}</li>
-		{{/authors}}
-
-		{{^authors}}
-		    <li>anonymous</li>
-		{{/authors}}
-	</ul>
+<div id="ballot-1" class="white-popup mfp-hide">
 	
-	{{#stooges}}
-	<b>{{name}}</b>
-	{{/stooges}}
+	<h4 class="page__title"><span class="page__title__text">ОПРОСНЫЙ ЛИСТ</span></h4>
+	
+	Для подготовки технико-коммерческого предложения по созданию системы защиты персональных данных
 
-	* {{name}}
-	* {{age}}
-	* {{company}}
-	* {{{company}}}
-	* {{&company}}
-	{{=<% %>=}}
-	* {{company}}
-	<%={{ }}=%>
-</script>
+	Информация для ТКП
+
+	<form action="" method="post" class="form ajax-form">
+	
+		<label class="form__label">
+			<span class="form__label__name">Название компании</span>
+			<input type="text" class="form__input">
+		</label>
+
+		<label class="form__label">
+			<span class="form__label__name">ИНН / КПП компании</span>
+			<input type="text" class="form__input">
+		</label>
+
+		<label class="form__label">
+			<span class="form__label__name">Адрес компании</span>
+			<input type="text" class="form__input">
+		</label>
+
+		<label class="form__label">
+			<span class="form__label__name">ФИО заполняющего</span>
+			<input type="text" class="form__input">
+		</label>
+
+		<label class="form__label">
+			<span class="form__label__name">Адрес электронной почты</span>
+			<input type="text" class="form__input">
+		</label>
+
+		<label class="form__label">
+			<span class="form__label__name">Должность</span>
+			<input type="text" class="form__input">
+		</label>
+
+		<label class="form__label">
+			<span class="form__label__name">Контактный телефон</span>
+			<input type="text" class="form__input">
+		</label>
+
+	</form>
+</div>

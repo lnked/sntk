@@ -1,3 +1,13 @@
+.white-popup {
+	position: relative;
+	background: #FFF;
+	padding: 20px;
+	width: auto;
+	max-width: 96rem;
+	margin: 20px auto;
+	box-shadow: 0 0 9px rgba(0, 0, 0, 0.18);
+}
+
 // Настройки
 $popupCloseSize: 1.8rem;
 
