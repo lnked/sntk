@@ -23,24 +23,24 @@
 	position: relative;
 	overflow: hidden;
 	
-	&:before, &:after {
-		width: 1px;
-		height: 100%;
-		position: fixed;
-		top: 0;
-		left: 50%;
-		content: "";
-		background-color: red;
-		z-index: 1000;
-	}
+	// &:before, &:after {
+	// 	width: 1px;
+	// 	height: 100%;
+	// 	position: fixed;
+	// 	top: 0;
+	// 	left: 50%;
+	// 	content: "";
+	// 	background-color: red;
+	// 	z-index: 1000;
+	// }
 
-	&:before {
-		margin-left: -48.2rem;
-	}
+	// &:before {
+	// 	margin-left: -48.2rem;
+	// }
 
-	&:after {
-		margin-left: 48.1rem;
-	}
+	// &:after {
+	// 	margin-left: 48.1rem;
+	// }
 
 	&_light &__inner {
 		background-color: $gray3-color;

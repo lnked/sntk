@@ -72,53 +72,286 @@
 
 <div class="overlay" id="overlay"></div>
 
-<div id="ballot-1" class="white-popup mfp-hide">
-	
-	<h4 class="page__title"><span class="page__title__text">ОПРОСНЫЙ ЛИСТ</span></h4>
-	
-	Для подготовки технико-коммерческого предложения по созданию системы защиты персональных данных
+<div id="question" class="popup">
+	<div class="popup__dialog">
+		<section class="popup__content">
+			<b class="popup__close js-popup-close">Закрыть</b>
+			
+			<h4 class="page__title"><span class="page__title__text">ЗАДАТЬ ВОПРОС</span></h4>
+		
+			<form action="" method="post" class="form ajax-form">
+				
+				<div class="form__columns clearfix">
+					<div class="form__columns__item form__columns__item_pr">
+						<label class="form__label">
+							<span class="form__label__name">ФИО </span>
+							<input type="text" class="form__input">
+						</label>
 
-	Информация для ТКП
+						<label class="form__label">
+							<span class="form__label__name">Адрес электронной почты</span>
+							<input type="text" class="form__input">
+						</label>
 
-	<form action="" method="post" class="form ajax-form">
-	
-		<label class="form__label">
-			<span class="form__label__name">Название компании</span>
-			<input type="text" class="form__input">
-		</label>
+						<label class="form__label">
+							<span class="form__label__name">Контактный телефон</span>
+							<input type="text" class="form__input">
+						</label>
+					</div>
 
-		<label class="form__label">
-			<span class="form__label__name">ИНН / КПП компании</span>
-			<input type="text" class="form__input">
-		</label>
+					<div class="form__columns__item form__columns__item_pl">
+						<label class="form__label">
+							<span class="form__label__name">Текст сообщения</span>
+							<textarea name="" cols="30" rows="10" class="form__textarea"></textarea>
+						</label>
+					</div>
+				</div>
 
-		<label class="form__label">
-			<span class="form__label__name">Адрес компании</span>
-			<input type="text" class="form__input">
-		</label>
+				<div class="form__button form__button_right">
+					<button type="submit" class="button button_large">отправить</button>
+				</div>
+			
+			</form>
 
-		<label class="form__label">
-			<span class="form__label__name">ФИО заполняющего</span>
-			<input type="text" class="form__input">
-		</label>
-
-		<label class="form__label">
-			<span class="form__label__name">Адрес электронной почты</span>
-			<input type="text" class="form__input">
-		</label>
-
-		<label class="form__label">
-			<span class="form__label__name">Должность</span>
-			<input type="text" class="form__input">
-		</label>
-
-		<label class="form__label">
-			<span class="form__label__name">Контактный телефон</span>
-			<input type="text" class="form__input">
-		</label>
-
-	</form>
+		</section>
+	</div>
 </div>
+
+<div id="ballot-1" class="popup">
+	<div class="popup__dialog">
+		<section class="popup__content">
+			<b class="popup__close js-popup-close">Закрыть</b>
+			
+			<h4 class="page__title"><span class="page__title__text">ОПРОСНЫЙ ЛИСТ</span></h4>
+			
+			Для подготовки технико-коммерческого предложения по созданию системы защиты персональных данных
+
+			Информация для ТКП
+
+			<form action="" method="post" class="form ajax-form">
+				
+				<div class="form__columns clearfix">
+					<div class="form__columns__item form__columns__item_pr">
+						<label class="form__label">
+							<span class="form__label__name">Название компании</span>
+							<input type="text" class="form__input">
+						</label>
+						
+						<label class="form__label">
+							<span class="form__label__name">Адрес компании</span>
+							<input type="text" class="form__input">
+						</label>
+						
+						<label class="form__label">
+							<span class="form__label__name">Должность</span>
+							<input type="text" class="form__input">
+						</label>
+						
+						<label class="form__label">
+							<span class="form__label__name">Контактный телефон</span>
+							<input type="text" class="form__input">
+						</label>
+					</div>
+
+					<div class="form__columns__item form__columns__item_pl">
+						<label class="form__label">
+							<span class="form__label__name">ИНН / КПП компании</span>
+							<input type="text" class="form__input">
+						</label>
+						
+						<label class="form__label">
+							<span class="form__label__name">ФИО заполняющего</span>
+							<input type="text" class="form__input">
+						</label>
+
+						<label class="form__label">
+							<span class="form__label__name">Адрес электронной почты</span>
+							<input type="text" class="form__input">
+						</label>
+					</div>
+				</div>
+
+				<table class="small-padding no-border large-margin">
+					<colgroup>
+						<col width="52">
+						<col>
+						<col width="295">
+					</colgroup>
+					<thead>
+						<tr>
+							<th class="tac">№</th>
+							<th>Ворпосы</th>
+							<th>Поле для заполнения</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td></td>
+							<td></td>
+							<td><input type="text" class="form__input"></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td><input type="text" class="form__input"></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td><input type="text" class="form__input"></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td><input type="text" class="form__input"></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td><input type="text" class="form__input"></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td><input type="text" class="form__input"></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td><input type="text" class="form__input"></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td><input type="text" class="form__input"></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td><input type="text" class="form__input"></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td><input type="text" class="form__input"></td>
+						</tr>
+					</tbody>
+				</table>
+
+				<table class="popup__table">
+					<colgroup>
+						<col width="250">
+						<col width="45">
+						<col width="45">
+						<col width="190">
+						<col>
+						<col width="185">
+					</colgroup>
+					<thead>
+						<tr>
+							<th>Описание окна (схема) обязательно</th>
+							<th colspan="2">Размеры</th>
+							<th>Материал (пластик/дерево)</th>
+							<th>Количество сегментов стекла</th>
+							<th>Расстояние межд. стекл.</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td></td>
+							<td>Шир</td>
+							<td>Выс</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>1-е окно</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>2-е окно</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>3-е окно</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>4-е окно</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+
+				<table class="popup__table">
+					<colgroup>
+						<col width="52">
+						<col width="385">
+						<col>
+					</colgroup>
+					<thead>
+						<tr>
+							<th class="tac">№</th>
+							<th>Наименование СЗИ</th>
+							<th>Необходимость замены</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			
+				<div class="form__button">
+					<button type="submit" class="button button_large">отправить</button>
+				</div>
+			
+			</form>
+
+		</section>
+	</div>
+</div>
+
 
 <div class="layout-wrapper">
 	
@@ -176,8 +409,8 @@
 	
 	<nav class="navigation" role="navigation">
 	<ul class="navigation__list">
-		<li class="navigation__item"><a href="./activities.html" class="navigation__link">направления деятельности</a></li>
 		<li class="navigation__item"><a href="./about.html" class="navigation__link">о компании</a></li>
+		<li class="navigation__item"><a href="./activities.html" class="navigation__link">направления деятельности</a></li>
 		<li class="navigation__item"><a href="./license.html" class="navigation__link">лицензии и сертификаты</a></li>
 		<li class="navigation__item"><a href="./customers.html" class="navigation__link current">заказчики</a></li>
 		<li class="navigation__item"><a href="./contacts.html" class="navigation__link">контакты</a></li>
@@ -243,8 +476,8 @@
 	
 	<nav class="layout-footer__navigation navigation navigation_footer" role="navigation">
 		<ul class="navigation__list">
-			<li class="navigation__item"><a href="./activities.html" class="navigation__link navigation__link_footer ">направления деятельности</a></li>
 			<li class="navigation__item"><a href="./about.html" class="navigation__link navigation__link_footer ">о компании</a></li>
+			<li class="navigation__item"><a href="./activities.html" class="navigation__link navigation__link_footer ">направления деятельности</a></li>
 			<li class="navigation__item"><a href="./license.html" class="navigation__link navigation__link_footer ">лицензии и сертификаты</a></li>
 			<li class="navigation__item"><a href="./customers.html" class="navigation__link navigation__link_footer current">заказчики</a></li>
 			<li class="navigation__item"><a href="./contacts.html" class="navigation__link navigation__link_footer ">контакты</a></li>

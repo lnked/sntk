@@ -323,10 +323,11 @@
 			this.toggleClass();
 			this.initViewer();
 			this.initMagnific();
-
 			// this.ajaxForm.init();
-		}
 
+			// $.popup.open('ballot-1');
+		}
+		
 	};
 
 })( jQuery );
