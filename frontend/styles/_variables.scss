@@ -24,6 +24,8 @@ $gray-color					: #e2e8e9;
 $gray2-color				: #e3e9eb;
 $gray3-color				: mix($gray-color, #fff, 50%);
 $blue-color					: #0a4b82;
+$dark-blue-color			: darken($blue-color, 30%);
+$light-blue-color			: ligthen($blue-color, 30%);
 
 $error-color				: #fa5e5b;
 $border-color 				: gray;

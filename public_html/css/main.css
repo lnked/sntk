@@ -283,6 +283,8 @@ a:focus {
       padding-left: 23px;
       background-repeat: no-repeat;
       background-position: 0 50%; }
+      .layout-header__col__link:hover {
+        color: black; }
       .layout-header__col__link_email {
         background-image: url(../images/mail.png); }
       .layout-header__col__link_question {
@@ -443,12 +445,12 @@ a:focus {
     max-width: 96rem;
     margin: 0 auto;
     height: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: -15px;
+    position: relative;
     padding: 60px 0;
-    padding: 6rem 0; }
+    padding: 6rem 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
     .popup__dialog.is-scrolling {
       position: relative;
       left: auto;
@@ -463,7 +465,10 @@ a:focus {
     background-color: #fff;
     background-color: rgba(255, 255, 255, 0.9);
     -webkit-box-shadow: 0 0 0.9rem rgba(0, 0, 0, 0.18);
-    box-shadow: 0 0 0.9rem rgba(0, 0, 0, 0.18); }
+    box-shadow: 0 0 0.9rem rgba(0, 0, 0, 0.18);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
   .popup__close {
     height: 23px;
     color: #878787;
@@ -1070,6 +1075,8 @@ textarea {
     padding: .7rem 1rem;
     max-width: 100%;
     resize: vertical; }
+    .form__textarea_simple {
+      height: 87px; }
   .form__star {
     color: orange;
     font-size: 14px;
@@ -1803,7 +1810,8 @@ table {
       font-size: 13px;
       font-size: 1.3rem;
       line-height: 1.3;
-      font-weight: 400; }
+      font-weight: 400;
+      vertical-align: middle; }
       table tbody tr td.tac {
         text-align: center; }
   table.large-margin {
@@ -1965,7 +1973,7 @@ table {
     position: absolute;
     left: 0;
     top: 0;
-    background-color: #cccc00; }
+    background-color: #eee; }
     .contacts__map__inner {
       height: 410px;
       height: 41rem; }

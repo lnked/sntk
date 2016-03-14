@@ -300,4 +300,6 @@
 
 	};
 
+	$.app.ajaxForm.init();
+
 })( jQuery );

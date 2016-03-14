@@ -135,10 +135,10 @@ $.popup.open('popup-choose-photo-source/nested-tab');
 
         	if ($dialog.outerHeight() > $win.height())
         	{
-        		$dialog.addClass('is-scrolling')
+        		$dialog.addClass('is-scrolling');
     		}
     		else {
-    			$dialog.removeClass('is-scrolling')
+    			$dialog.removeClass('is-scrolling');
     		}
         },
 
@@ -312,6 +312,10 @@ $.popup.open('popup-choose-photo-source/nested-tab');
 				setTimeout(function(){
 					$popup.addClass('animate');
 					$body.trigger('popup.after_open', $popup);
+					
+					setTimeout(function(){
+						$popup.scrollTop(0);
+					}, 10);
 					
 					if (nested.length)
 					{

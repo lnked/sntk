@@ -9,8 +9,6 @@ module.exports = function(options) {
 	
 	return function(callback) {
 		
-		clean(options.app, options.rm);
-		
 		gulp.src(options.src)
 			
 			.pipe($.plumber({errorHandler: errorHandler}))

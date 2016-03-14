@@ -186,8 +186,4 @@ gulp.task('build',
 	)
 );
 
-gulp.task('default',
-	// gulp.series('build',
-		gulp.parallel('watch', 'webserver')
-	// )
-);
+gulp.task('default', gulp.series('watch'));

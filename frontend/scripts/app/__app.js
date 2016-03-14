@@ -31,7 +31,7 @@
 		initPopup: function()
 		{
 			$.popup.init('.js-open-popup', {
-				cssPosition: false,
+				cssPosition: true,
 				wrapper: '.layout-wrapper'
 			});
 
@@ -323,11 +323,10 @@
 			this.toggleClass();
 			this.initViewer();
 			this.initMagnific();
-			// this.ajaxForm.init();
 
 			// $.popup.open('ballot-1');
 		}
-		
+
 	};
 
 })( jQuery );

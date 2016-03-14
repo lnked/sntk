@@ -6,13 +6,13 @@
 
 <div class="layout-wrapper">
 	
-	@@include('./components/upper.html', {
-		"current": "partners"
-	})
+	@@include('./components/upper.html')
 	
 	@@include('./components/header.html')
 	
-	@@include('./components/navigation.html')
+	@@include('./components/navigation.html', {
+		"current": "partners"
+	})
 
 	<div class="layout-wrapper__inner" itemprop="mainContentOfPage">
 		
@@ -46,6 +46,8 @@
 
 </div>
 
-@@include('./components/footer.html')
+@@include('./components/footer.html', {
+	"current": "partners"
+})
 
 @@include('./components/scripts.html')

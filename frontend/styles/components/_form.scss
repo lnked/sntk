@@ -157,6 +157,10 @@ textarea {
 		padding: .7rem 1rem;
 		max-width: 100%;
 		resize: vertical;
+
+		&_simple {
+			height: 87px;
+		}
 	}
 
 	&__star {

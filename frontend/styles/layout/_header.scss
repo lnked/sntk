@@ -56,7 +56,7 @@
 		}
 
 		&__link {
-			color: #0a4b82;
+			color: $blue-color;
 			font-family: $font-tahoma;
 			font-size: 1.3rem;
 			font-weight: 400;
@@ -64,6 +64,10 @@
 			padding-left: 23px;
 			background-repeat: no-repeat;
 			background-position: 0 50%;
+
+			&:hover {
+				color: $dark-blue-color;
+			}
 
 			&_email {
 				background-image: url(../images/mail.png);	

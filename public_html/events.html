@@ -72,14 +72,14 @@
 
 <div class="overlay" id="overlay"></div>
 
-<div id="question" class="popup">
+<div id="popup-question" class="popup">
 	<div class="popup__dialog">
 		<section class="popup__content">
 			<b class="popup__close js-popup-close">Закрыть</b>
 			
 			<h4 class="page__title"><span class="page__title__text">ЗАДАТЬ ВОПРОС</span></h4>
 		
-			<form action="" method="post" class="form ajax-form">
+			<form action="" method="post" class="form form-ajax">
 				
 				<div class="form__columns clearfix">
 					<div class="form__columns__item form__columns__item_pr">
@@ -128,7 +128,7 @@
 
 			Информация для ТКП
 
-			<form action="" method="post" class="form ajax-form">
+			<form action="" method="post" class="form form-ajax">
 				
 				<div class="form__columns clearfix">
 					<div class="form__columns__item form__columns__item_pr">
@@ -186,54 +186,89 @@
 					</thead>
 					<tbody>
 						<tr>
-							<td></td>
-							<td></td>
+							<td class="tac">1.</td>
+							<td>Общее количество подразделений/филиалов компании</td>
 							<td><input type="text" class="form__input"></td>
 						</tr>
 						<tr>
-							<td></td>
-							<td></td>
+							<td class="tac">2.</td>
+							<td>Общее количество АРМ в компании</td>
 							<td><input type="text" class="form__input"></td>
 						</tr>
 						<tr>
-							<td></td>
-							<td></td>
+							<td class="tac">3.</td>
+							<td>Количество АРМ, на которых обрабатываются персональные данные (ПДн)</td>
 							<td><input type="text" class="form__input"></td>
 						</tr>
 						<tr>
-							<td></td>
-							<td></td>
+							<td class="tac">4.</td>
+							<td>Общее количество физических серверов в компании</td>
 							<td><input type="text" class="form__input"></td>
 						</tr>
 						<tr>
-							<td></td>
-							<td></td>
-							<td><input type="text" class="form__input"></td>
+							<td class="tac">5.</td>
+							<td>Количество физических серверов, на которых обрабатываются ПДн</td>
+							<td><input type="text" class="form__textarea form__textarea_simple"></td>
 						</tr>
 						<tr>
-							<td></td>
-							<td></td>
-							<td><input type="text" class="form__input"></td>
+							<td class="tac">6.</td>
+							<td>Применяется ли технология виртуализации? Если да, то какая? (Hyper-V, VMware)</td>
+							<td><input type="text" class="form__textarea form__textarea_simple"></td>
 						</tr>
 						<tr>
-							<td></td>
-							<td></td>
-							<td><input type="text" class="form__input"></td>
+							<td class="tac">7.</td>
+							<td>Общее количество виртуальных серверов в компании</td>
+							<td><input type="text" class="form__textarea form__textarea_simple"></td>
 						</tr>
 						<tr>
-							<td></td>
-							<td></td>
-							<td><input type="text" class="form__input"></td>
+							<td class="tac">8.</td>
+							<td>Количество виртуальных серверов, на которых обрабатываются ПДн</td>
+							<td><input type="text" class="form__textarea form__textarea_simple"></td>
 						</tr>
 						<tr>
-							<td></td>
-							<td></td>
-							<td><input type="text" class="form__input"></td>
+							<td class="tac">9.</td>
+							<td>Участвуют ли в обработке ПДн мобильные технические средства? Какие именно?</td>
+							<td><input type="text" class="form__textarea form__textarea_simple"></td>
 						</tr>
 						<tr>
-							<td></td>
-							<td></td>
-							<td><input type="text" class="form__input"></td>
+							<td class="tac">10.</td>
+							<td>Количество мобильных технических средств каждого из вышеуказанных видов, на которых обрабатывается ПДн</td>
+							<td><input type="text" class="form__textarea form__textarea_simple"></td>
+						</tr>
+						<tr>
+							<td class="tac">11.</td>
+							<td>Какие операционные системы установлены на АРМ, обрабатывающие ПДн?<br>Какой разрядности (х86-х64)?<br>Являются ли все операционные системы лицензионными?</td>
+							<td><input type="text" class="form__textarea form__textarea_simple"></td>
+						</tr>
+						<tr>
+							<td class="tac">12.</td>
+							<td>Какие операционные системы установлены на серверах, обрабатывающие ПДн?<br>Какой разрядности (х86-х64)?<br>Являются ли все операционные системы лицензионными?</td>
+							<td><input type="text" class="form__textarea form__textarea_simple"></td>
+						</tr>
+						<tr>
+							<td class="tac">13.</td>
+							<td>Какие лицензионные антивирусные средства защиты установлены на АРМ, обрабатывающие ПДн?<br>Сертифицированы ли они ФСТЭК России?<br>Имеется ли в наличии формуляр ФСТЭК России на данное средство защиты?</td>
+							<td><input type="text" class="form__textarea form__textarea_simple"></td>
+						</tr>
+						<tr>
+							<td class="tac">14.</td>
+							<td>Какие лицензионные антивирусные средства защиты установлены на сервера, обрабатывающие ПДн?<br>Сертифицированы ли они ФСТЭК России?<br>Имеется ли в наличии формуляр ФСТЭК России на данное средство защиты?</td>
+							<td><input type="text" class="form__textarea form__textarea_simple"></td>
+						</tr>
+						<tr>
+							<td class="tac">15.</td>
+							<td>Применяются ли сертифицированные ФСТЭК России средства обнаружения вторжений?<br>Какие именно?<br>Имеется ли в наличии формуляр ФСТЭК России на данное средство защиты?</td>
+							<td><input type="text" class="form__textarea form__textarea_simple"></td>
+						</tr>
+						<tr>
+							<td class="tac">16.</td>
+							<td>Применяются ли сертифицированные ФСТЭК России средства межсетевого экранирования?<br>Какие именно?<br>Имеется ли в наличии формуляр ФСТЭК России на данное средство защиты?</td>
+							<td><input type="text" class="form__textarea form__textarea_simple"></td>
+						</tr>
+						<tr>
+							<td class="tac">17.</td>
+							<td>Применяются ли сертифицированные ФСТЭК России средства защиты информации от несанкционированного доступа?<br>Какие именно?<br>Имеется ли в наличии формуляр ФСТЭК России на данное средство защиты</td>
+							<td><input type="text" class="form__textarea form__textarea_simple"></td>
 						</tr>
 					</tbody>
 				</table>
@@ -258,7 +293,7 @@
 					</thead>
 					<tbody>
 						<tr>
-							<td></td>
+							<td class="tac"></td>
 							<td>Шир</td>
 							<td>Выс</td>
 							<td></td>
@@ -266,7 +301,7 @@
 							<td></td>
 						</tr>
 						<tr>
-							<td>1-е окно</td>
+							<td class="tac">1-е окно</td>
 							<td></td>
 							<td></td>
 							<td></td>
@@ -274,7 +309,7 @@
 							<td></td>
 						</tr>
 						<tr>
-							<td>2-е окно</td>
+							<td class="tac">2-е окно</td>
 							<td></td>
 							<td></td>
 							<td></td>
@@ -282,7 +317,7 @@
 							<td></td>
 						</tr>
 						<tr>
-							<td>3-е окно</td>
+							<td class="tac">3-е окно</td>
 							<td></td>
 							<td></td>
 							<td></td>
@@ -290,7 +325,7 @@
 							<td></td>
 						</tr>
 						<tr>
-							<td>4-е окно</td>
+							<td class="tac">4-е окно</td>
 							<td></td>
 							<td></td>
 							<td></td>
@@ -315,27 +350,27 @@
 					</thead>
 					<tbody>
 						<tr>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>
-						<tr>
-							<td></td>
+							<td class="tac"></td>
 							<td></td>
 							<td></td>
 						</tr>
 						<tr>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>
-						<tr>
-							<td></td>
+							<td class="tac"></td>
 							<td></td>
 							<td></td>
 						</tr>
 						<tr>
+							<td class="tac"></td>
 							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td class="tac"></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td class="tac"></td>
 							<td></td>
 							<td></td>
 						</tr>
@@ -363,7 +398,6 @@
 			<li class="layout-upper__item"><a href="./technical-base.html" class="layout-upper__link">Материально-техническая база</a></li>
 			<li class="layout-upper__item"><a href="./events.html" class="layout-upper__link current">События</a></li>
 			<li class="layout-upper__item"><a href="./products.html" class="layout-upper__link">Продукты и решения</a></li>
-			<li class="layout-upper__item"><a href="./partners.html" class="layout-upper__link">Партнеры</a></li>
 		</ul>
 
 		<form action="" class="layout-upper__search search">
@@ -397,7 +431,7 @@
 		 
 		<div class="layout-header__col layout-header__col_x3">
 			<div class="layout-header__col__title">Обратная связь</div>
-			<a href="" class="layout-header__col__link layout-header__col__link_question">задать вопрос</a>
+			<a href="#popup-question" class="layout-header__col__link layout-header__col__link_question js-open-popup">задать вопрос</a>
 		</div>
 		
 		<div class="layout-header__button">
@@ -413,6 +447,7 @@
 		<li class="navigation__item"><a href="./activities.html" class="navigation__link">направления деятельности</a></li>
 		<li class="navigation__item"><a href="./license.html" class="navigation__link">лицензии и сертификаты</a></li>
 		<li class="navigation__item"><a href="./customers.html" class="navigation__link">заказчики</a></li>
+		<li class="navigation__item"><a href="./partners.html" class="navigation__link">Партнеры</a></li>
 		<li class="navigation__item"><a href="./contacts.html" class="navigation__link">контакты</a></li>
 	</ul>
 </nav>
@@ -683,6 +718,7 @@
 			<li class="navigation__item"><a href="./activities.html" class="navigation__link navigation__link_footer ">направления деятельности</a></li>
 			<li class="navigation__item"><a href="./license.html" class="navigation__link navigation__link_footer ">лицензии и сертификаты</a></li>
 			<li class="navigation__item"><a href="./customers.html" class="navigation__link navigation__link_footer ">заказчики</a></li>
+			<li class="navigation__item"><a href="./partners.html" class="navigation__link navigation__link_footer ">Партнеры</a></li>
 			<li class="navigation__item"><a href="./contacts.html" class="navigation__link navigation__link_footer ">контакты</a></li>
 		</ul>
 	</nav>
@@ -735,7 +771,6 @@
 				<li class="layout-footer__item"><a href="" class="layout-footer__link">Материально-техническая база</a></li>
 				<li class="layout-footer__item"><a href="" class="layout-footer__link">События</a></li>
 				<li class="layout-footer__item"><a href="" class="layout-footer__link">Продукты и решения</a></li>
-				<li class="layout-footer__item"><a href="" class="layout-footer__link">Партнеры</a></li>
 			</ul>
 		</div>
 	</div>
