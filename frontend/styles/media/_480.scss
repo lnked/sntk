@@ -1,1 +1,188 @@
-@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 480px) {
+
+	.map {
+		&__content {
+			padding: 2rem;
+
+			&__count {
+				height: 10rem;
+				font-size: 12rem;
+				padding-top: 3.2rem;
+				margin-bottom: 2rem;
+			}
+		}
+	}
+
+	.carousel {
+		margin-bottom: 2rem;
+		
+		&__item {
+			&__border {
+				display: none;
+			}
+		}
+
+		&__navigation {
+			&_prev {
+				left: 0;
+			}
+
+			&_next {
+				right: 0;
+			}
+		}
+	}
+
+	.columns {
+		clear: both;
+		margin-bottom: 4.5rem;
+	
+		&:before, &:after {
+			display: none;
+		}
+
+		&__item {
+			width: 100%;
+			padding: 2rem;
+			float: none;
+			
+			&_about {
+				background-color: #0a4b82;
+			}
+
+			&_events {
+				background-color: #eaeff1;
+			}
+		}
+	}
+
+	.events {
+		&__wrapper {
+			padding: 65px 2rem 2rem;
+		}
+
+		&__navigation {
+			top: 1px;
+		}
+	}
+
+	.page {
+		&__title {
+			margin-bottom: 2rem;
+
+			&__text {
+				&:before, &:after {
+					display: none;
+				}
+			}
+		}
+	}
+	
+	.half {
+		margin-bottom: 0;
+
+		&__item {
+			width: 100%;
+			clear: both;
+			
+			&:first-child {
+				padding-right: 0;
+			}
+
+			&:last-child {
+				padding-left: 0;
+			}
+		}
+	}
+
+	.blockquote {
+		padding: 2rem;
+		margin-top: 0;
+		margin-bottom: 3rem;
+	}
+
+	.documents {
+		&__item {
+			width: 100%;
+			text-align: center;
+			margin: 0 auto 2rem;
+
+			&__image {
+				margin: 0 auto;
+				max-width: 100%;
+			}
+		}
+	}
+
+	.pagination {
+		&__item {
+			&__nav {
+				width: 10px;
+				padding: 0;
+				font-size: 0;
+				display: block;
+				text-indent: -1000px;
+
+				&_prev {
+					margin-right: 10px;
+				}
+
+				&_next {
+					margin-left: 10px;
+				}
+			}
+
+			&:not(:last-child) {
+				margin-right: 2px;
+			}
+
+			&:not(:first-child) {
+				margin-left: 2px;
+			}
+		}
+	}
+
+	.partners,
+	.customers {
+		margin-top: 0;
+		margin-bottom: 1rem;
+
+		&__item {
+			width: 100%;
+			text-align: center;
+			margin-bottom: 4rem;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			&__image {
+				line-height: 1;
+			}
+		}
+	}
+
+	.form {
+		&__columns {
+			clear: both;
+
+			&__item {
+				width: 100%;
+				float: none;
+
+				&:not(:last-child) {
+			    	margin-bottom: 25px;
+			    }
+
+				&_pr {
+					padding-right: 0;
+				}
+
+				&_pl {
+					padding-left: 0;
+				}
+			}
+		}
+	}
+	
+}

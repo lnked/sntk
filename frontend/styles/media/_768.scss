@@ -1,4 +1,11 @@
 @media only screen and (max-width: 768px) {
+	
+	.layout-wrapper {
+		&__inner {
+			padding-bottom: 2rem;
+		}
+	}
+
 	.sandwich {
 		z-index: 10000;
 		@include opacity(1);
@@ -77,6 +84,198 @@
 
 			&.current, &:hover {
 				background-color: #fff;
+			}
+		}
+	}
+
+	.viewer {
+		margin-bottom: 0;
+
+		&__nav {
+			float: none;
+			text-align: center;
+		}
+
+		&__list {
+			text-align: center;
+			
+			&__item {
+				margin: 0 5px 5px;
+			}
+		}
+	}
+
+	.events-list {}
+
+	.events-item {
+		float: none;
+		text-align: left;
+		margin: 0 auto 3rem !important;
+	}
+
+	.content {
+		float: none;
+		padding-right: 0;
+	}
+
+	.sidebar {
+		width: 100%;
+		clear: both;
+		float: none;
+		margin-left: 0;
+
+		&__title {
+			font-size: 1.8rem;
+			font-weight: 700;
+			text-align: center;
+			margin-bottom: 2rem;
+		}
+	}
+
+	.partners,
+	.customers {
+		margin-top: 0;
+		margin-bottom: 2rem;
+
+		&__item {
+			width: 33.3333%;
+		}
+	}
+
+	.layout-upper {
+		height: auto;
+		padding: 4.5rem 2rem 1.5rem;
+
+		&__search {
+			width: 100%;
+			position: relative;
+			right: auto;
+			top: auto;
+		}
+
+		&__wrapper {
+			padding: 0;
+		}
+	
+		&__list {
+			margin-bottom: 1rem;
+		}
+
+		&__item {
+			display: block;
+			margin: 0 0 .5rem;
+		}
+
+		&__link {
+			text-align: center;
+			background-color: $gray3-color;
+		}
+	}
+
+	.layout-header {
+		height: auto;
+		padding: 2rem 2rem;
+
+		&__wrapper {
+			padding: 0;
+		}
+
+		&__logo {
+			position: relative;
+			left: auto;
+			top: auto;
+			margin-top: 0;
+			margin-bottom: 2rem;
+		}
+
+		&__button {
+			position: relative;
+			left: auto;
+			right: auto;
+			top: auto;
+		}
+
+		&__col {
+			position: relative;
+			top: auto;
+			left: auto;
+			float: none;
+			margin-bottom: 2rem;
+	
+			&__link,
+			&__phone,
+			&__title {
+				margin-bottom: 0;
+				display: inline-block;
+				vertical-align: middle;
+			}
+
+			&__title {
+				margin-right: 1rem;
+			}
+		}
+
+		.button {
+			width: 100%;
+			display: block;
+		}
+	}
+
+	.layout-footer {
+		height: auto;
+		margin-top: 0;
+		padding: 2rem;
+
+		&__wrapper {
+			padding: 0;
+		}
+
+		&__bottom,
+		&__content,
+		&__contacts {
+			position: relative;
+			left: auto;
+			right: auto;
+			top: auto;
+			bottom: auto;
+			height: auto;
+			clear: both;
+		}
+
+		&__contacts {
+			margin-bottom: 2rem;
+			border-bottom: 1px solid #fff;
+		}
+	
+		&__content {
+			&__block {
+				float: none;
+				width: 100%;
+				margin-bottom: 2rem;
+			}
+		}
+
+		&__bottom {
+			clear: both;
+		}
+
+		&__list {
+			display: none;
+		}
+	}
+
+	.fieldset {
+		&__content {
+			padding: 4rem 0;
+		}
+
+		&__list {
+			&__item {
+				max-width: 100%;
+
+				&:not(:last-child) {
+					margin-bottom: 3rem;
+				}
 			}
 		}
 	}

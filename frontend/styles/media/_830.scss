@@ -1,0 +1,57 @@
+@media only screen and (max-width: 830px) {
+	
+	.contacts {
+		height: auto;
+		overflow: visible;
+
+		&__map {
+			position: relative;
+			left: auto;
+			top: auto;
+			height: 41rem;
+		}
+
+		&__block {
+			width: 100%;
+			position: relative;
+			left: auto;
+			bottom: auto;
+			right: auto;
+			top: auto;
+			margin-left: 0;
+		}
+	}
+
+	.branch {
+		clear: both;
+		margin-bottom: 4rem;
+
+		&__item {
+			width: 100%;
+			float: none;
+			clear: both;
+			height: auto;
+			display: block;
+			
+			&:not(:last-child) {
+				margin-bottom: 3rem;
+			}
+
+			&__direction {
+				margin-top: 0;
+				margin-bottom: 1rem;
+			}
+
+			&__phone {
+				position: relative;
+				left: auto;
+				bottom: auto;
+			}
+		}
+
+		&__separator {
+			display: none;
+		}
+	}
+
+}
