@@ -289,23 +289,75 @@
 			});
 		},
 
+		setCurrent: function(viewer)
+		{
+			var list = viewer.find('.js-viewer-list');
+
+			viewer.find('.js-viewer-count').html(list.find('.current').closest('.viewer__list__item').index()+1);
+			viewer.find('.js-viewer-total').html(list.find('.viewer__list__item').length);
+		},
+
 		initViewer: function()
 		{
+			_this = this;
+
+			body.on('click', '.js-viewer-prev', function(e){
+				e.preventDefault();
+
+				var viewer = $(this).closest('.js-viewer'),
+					list = viewer.find('.js-viewer-list'),
+					index = list.find('.current').closest('.viewer__list__item').index(), next;
+
+				if (list.find('.viewer__list__item').eq(index-1).length)
+				{
+					next = list.find('.viewer__list__item').eq(index-1);
+				}
+				else {
+					next = list.find('.viewer__list__item').eq(list.find('.viewer__list__item').length);
+				}
+
+				next.find('.js-viewer-trigger').trigger('click');
+
+				_this.setCurrent(viewer);
+			});
+
+			body.on('click', '.js-viewer-next', function(e){
+				e.preventDefault();
+
+				var viewer = $(this).closest('.js-viewer'),
+					list = viewer.find('.js-viewer-list'),
+					index = list.find('.current').closest('.viewer__list__item').index(), next;
+
+				if (list.find('.viewer__list__item').eq(index+1).length)
+				{
+					next = list.find('.viewer__list__item').eq(index+1);
+				}
+				else {
+					next = list.find('.viewer__list__item').eq(0);
+				}
+
+				next.find('.js-viewer-trigger').trigger('click');
+
+				_this.setCurrent(viewer);
+			});
+
 			body.on('click', '.js-viewer-trigger', function(e){
 				e.preventDefault();
 
 				var viewer = $(this).closest('.js-viewer'),
-					image = $(this).attr('href'),
-					count = viewer.find('.js-viewer-count'),
-					total = viewer.find('.js-viewer-total');
+					image = $(this).attr('href');
 
 				viewer.find('.current').removeClass('current');
 				viewer.find('.js-viewer-image').html('<img src="' + image + '" class="viewer__image__src" alt="">');
 
 				$(this).addClass('current');
+
+				_this.setCurrent(viewer);
 				
 				return !1;
 			});
+
+			_this.setCurrent($('.js-viewer'));
 		},
 
 		init: function()
@@ -323,8 +375,6 @@
 			this.toggleClass();
 			this.initViewer();
 			this.initMagnific();
-
-			// $.popup.open('ballot-1');
 		}
 
 	};
