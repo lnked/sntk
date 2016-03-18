@@ -82,6 +82,12 @@
 	&__button {
 		position: absolute;
 		right: $padding;
-		top: 20px;
+		top: 10px;
+	}
+	
+	&__social {
+		position: absolute;
+		right: $padding;
+		bottom: 10px;
 	}
 }
