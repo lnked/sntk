@@ -127,10 +127,33 @@
 					<input type="text" class="form__input">
 				</label>
 
-				<label class="form__label">
-					<span class="form__label__name">Тип дверей: одинарные или двойные; металлические или деревянные; расстояние между дверьми (в случае, если двери двойные)</span>
-					<input type="text" class="form__input">
-				</label>
+				<div class="form__columns clearfix">
+					<div class="form__columns__item form__columns__item_pr">
+						<label class="form__label">
+							<span class="form__label__name">Тип дверей</span>
+							<select name="doors_type" onchange="showif(this.value, 2, '#distance-between-doors-4')">
+								<option value="1">одинарные</option>
+								<option value="2">двойные</option>
+							</select>
+						</label>
+						
+						<label class="form__label">
+							<span class="form__label__name">Материал дверей</span>
+							<select name="">
+								<option value="">металлические</option>
+								<option value="">деревянные</option>
+							</select>
+						</label>
+						
+					</div>
+
+					<div class="form__columns__item form__columns__item_pl">
+						<label class="form__label" id="distance-between-doors-4" style="display: none">
+							<span class="form__label__name">Расстояние между дверьми</span>
+							<input type="text" class="form__input">
+						</label>
+					</div>
+				</div>
 				
 				<p class="content-block">Описание окон: в таблице указать размеры окон (ширину и высоту), материал (металлопластик, дерево и т.д.), количество стёкол (внутренней рамы каждого окна):</p>
 
