@@ -43,7 +43,7 @@
 	max-width: 100%;
 	position: fixed;
 	font-size: 0;
-	line-height: 0;
+	line-height: 1;
 	z-index: 9999;
 	display: none;
 	overflow-y: auto;
@@ -78,6 +78,28 @@
 		}
 	}
 
+	&__title {
+		color: #2f3e4f;
+		font-size: 1.3rem;
+		font-weight: 400;
+		text-align: center;
+		margin-bottom: 45px;
+	}
+
+	&__header {
+		color: #2f3e4f;
+		font-size: 1.4rem;
+		font-weight: 700;
+		text-align: center;
+		text-transform: uppercase;
+		margin-bottom: 45px;
+
+		&_left {
+			text-align: left;
+			margin-bottom: 25px;
+		}
+	}
+
 	&__content {
 		width: 100%;
 		position: relative;
@@ -108,7 +130,7 @@
 	&__table {
 		clear: both;
 		width: 100%;
-		margin-bottom: 75px;
+		margin-bottom: 35px;
 		border-bottom: 0;
 		font-family: $font-arial;
 		

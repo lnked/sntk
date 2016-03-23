@@ -422,7 +422,7 @@ a:focus {
   max-width: 100%;
   position: fixed;
   font-size: 0;
-  line-height: 0;
+  line-height: 1;
   z-index: 9999;
   display: none;
   overflow-y: auto;
@@ -463,6 +463,24 @@ a:focus {
       -webkit-transform: none;
       -ms-transform: none;
       transform: none; }
+  .popup__title {
+    color: #2f3e4f;
+    font-size: 13px;
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 45px; }
+  .popup__header {
+    color: #2f3e4f;
+    font-size: 14px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 45px; }
+    .popup__header_left {
+      text-align: left;
+      margin-bottom: 25px; }
   .popup__content {
     width: 100%;
     position: relative;
@@ -493,7 +511,7 @@ a:focus {
   .popup__table {
     clear: both;
     width: 100%;
-    margin-bottom: 75px;
+    margin-bottom: 35px;
     border-bottom: 0;
     font-family: Arial, Helvetica, sans-serif; }
     .popup__table thead th {
@@ -545,6 +563,32 @@ a:focus {
     text-decoration: underline; }
   .dot-list li a:hover {
     text-decoration: none; }
+
+.page__content {
+  padding-top: 20px;
+  color: #191919;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.5; }
+  .page__content p {
+    margin-bottom: 25px; }
+  .page__content li {
+    margin-bottom: 10px; }
+
+.content-block {
+  color: #191919;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 25px; }
+
+.pseudo-link {
+  color: #0a4b82;
+  border-bottom: 1px dotted; }
 
 .navigation {
   overflow: hidden;
@@ -604,6 +648,8 @@ a:focus {
   font-weight: 400;
   text-align: center;
   margin-bottom: 54px; }
+  .page__title_simple {
+    margin-bottom: 30px; }
   .page__title__text {
     position: relative;
     display: inline-block;
@@ -1064,16 +1110,13 @@ textarea {
     color: red; }
   .form__input {
     height: 34px;
-    height: 3.4rem;
     padding: 0 10px;
     padding: 0 1rem; }
     .form__input_captcha {
       height: 50px; }
   .form__textarea {
     height: 200px;
-    height: 20rem;
     max-height: 300px;
-    max-height: 30rem;
     padding: 7px 10px;
     padding: .7rem 1rem;
     max-width: 100%;
@@ -1253,36 +1296,36 @@ textarea {
 .selectbox {
   color: #000;
   background: none;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
   margin: 0;
   padding: 0;
   z-index: 200;
-  vertical-align: top;
   cursor: pointer;
-  font-size: 16px;
-  font-size: 1.6rem;
-  font-weight: 300;
-  line-height: 48px;
-  border: 1px solid gray;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 32px;
+  vertical-align: top;
+  border: 1px solid #d5d5d5;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background-color: #fff;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
-  .selectbox.is-checked {
-    border-top-color: transparent; }
   .selectbox.is-disabled {
     opacity: 0.4;
     cursor: default; }
   .selectbox, .selectbox__select {
     width: 100%;
-    height: 48px;
+    height: 34px;
     display: block;
     position: relative; }
   .selectbox__select {
     z-index: 10000; }
     .selectbox__select__text {
       height: 100%;
-      padding: 0 47px 0 17px;
+      padding: 0 40px 0 10px;
       letter-spacing: 0.05ex;
       display: block;
       overflow: hidden;
@@ -1292,24 +1335,26 @@ textarea {
     right: 0;
     top: 0; }
     .selectbox__trigger, .selectbox__trigger__arrow {
-      width: 46px;
+      width: 35px;
       height: 100%;
       position: absolute;
       display: block; }
     .selectbox__trigger__arrow {
       top: 0;
       left: 0;
-      background: url(../images/select-pass.png) no-repeat 50% 50%; }
+      background: url(../images/select.png) no-repeat 50% 50%;
+      background-image: url(../images/select.svg);
+      background-size: 15px 9px; }
   .selectbox__dropdown {
     min-width: 100%;
     max-height: 183px;
     position: absolute;
-    top: 46px;
+    top: 32px;
     left: -1px;
     right: -1px;
     list-style: none;
     background-color: #fff;
-    border: 1px solid gray;
+    border: 1px solid #d5d5d5;
     -webkit-border-radius: 0 0 2px 2px;
     border-radius: 0 0 2px 2px;
     z-index: 9999;
@@ -1324,7 +1369,7 @@ textarea {
     .selectbox__dropdown__item {
       margin: 0;
       line-height: 1.2;
-      padding: 14px 17px;
+      padding: 8px 10px;
       border: none;
       background-image: none;
       -webkit-transition: color 0.4s;
@@ -1348,16 +1393,14 @@ textarea {
 
 .error .selectbox {
   color: #fa5e5b;
-  border-color: #fa5e5b;
-  border-top-color: transparent; }
+  border-color: #fa5e5b; }
 
 .selectbox-active {
-  border-top-color: transparent; }
+  -webkit-border-radius: 2px 2px 0 0;
+  border-radius: 2px 2px 0 0; }
   .selectbox-active .selectbox__select__item.is-empty,
   .selectbox-active .selectbox__dropdown__item.is-empty {
     display: none; }
-  .selectbox-active .selectbox__trigger__arrow {
-    background-image: url(../images/select.png); }
 
 .carousel {
   clear: both;

@@ -24,6 +24,7 @@
 		initMask: function()
 		{
 			$(".js-date-watcher").mask("99/99/9999");
+			$(".js-inn-watcher").mask("999999999999");
 			$(".js-phone-watcher").mask("+ 7 (999) 999-99-99");
 			$(".js-cartnumber-watcher").mask("999-999-999");
 		},
@@ -31,13 +32,12 @@
 		initPopup: function()
 		{
 			$.popup.init('.js-open-popup', {
-				cssPosition: true,
-				wrapper: '.layout-wrapper'
+				wrapper: '.layout-wrapper',
+				cssPosition: true
 			});
 
 			$('.open-popup-link').magnificPopup({
-				type:'inline',
-				midClick: true
+				type:'inline', midClick: true
 			});
 		},
 		
@@ -201,6 +201,18 @@
 			});
 		},
 		
+		initJump: function()
+		{
+			body.on('click', '.js-jumpto', function(e){
+				e.preventDefault();
+
+				if ($(this).data('target') && $($(this).data('target')).length)
+				{
+					$(this).closest('.popup').stop().animate({ scrollTop: $($(this).data('target')).position().top }, 'fast');
+				}
+			});
+		},
+
 		hashJump: function()
 		{
 			if (window.location.hash)
@@ -375,6 +387,7 @@
 			this.toggleClass();
 			this.initViewer();
 			this.initMagnific();
+			this.initJump();
 		}
 
 	};

@@ -143,7 +143,7 @@ textarea {
 	}
 
 	&__input {
-		height: 3.4rem;
+		height: 34px;
 		padding: 0 1rem;
 
 		&_captcha {
@@ -152,8 +152,8 @@ textarea {
 	}
 
 	&__textarea {
-		height: 20rem;
-		max-height: 30rem;
+		height: 200px;
+		max-height: 300px;
 		padding: .7rem 1rem;
 		max-width: 100%;
 		resize: vertical;
