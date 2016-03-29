@@ -6,16 +6,27 @@
 	&__item {
 		@extend %inline;
 		width: 25%;
+		margin-bottom: 50px;
 
 		&__image {
 			display: block;
-			line-height: 176px;
+			line-height: 1;
 			text-align: center;
+			margin-bottom: 20px;
 
 			&__src {
 				display: inline-block;
 				vertical-align: middle;
 			}
+		}
+
+		&__title {
+			color: #2f3e4f;
+			font-size: 1.4rem;
+			font-weight: 700;
+			line-height: 1.2;
+			text-align: center;
+			text-transform: uppercase;
 		}
 	}
 }
