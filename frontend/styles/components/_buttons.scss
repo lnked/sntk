@@ -35,6 +35,21 @@
 		font-weight: 400;
 	}
 
+	&_simple {
+		height: 32px;
+		line-height: 32px;
+	}
+
+	&_map {
+		width: 215px;
+		text-align: center;
+	}
+
+	&_anket {
+		width: 178px;
+		text-align: center;
+	}
+
 	&__ico {
 		display: block;
 		padding-left: 36px;
@@ -56,6 +71,13 @@
 		&_qu {
 			background-image: url(../images/ico-qu.png);
 			background-image: url(../images/ico-qu.svg);
+			background-size: 15px 20px;
+		}
+
+		&_map {
+			background-image: url(../images/ico-map.png);
+			background-image: url(../images/ico-map.svg);
+			background-size: 14px 20px;
 		}
 	}
 

@@ -406,6 +406,30 @@
 			_this.setCurrent($('.js-viewer'));
 		},
 
+		initEvents: function()
+		{
+			if ($('.events-item').length)
+			{
+				var stack = [], max = 0;
+
+				$('.events-item').each(function(){
+					stack.push($(this).outerHeight());
+				});
+
+				if (stack.length)
+				{
+					max = Array.max(stack);
+				}
+
+				if (max > 0)
+				{
+					$('.events-item').css({
+						'min-height': max + 'px'
+					})
+				}
+			}
+		},
+
 		init: function()
 		{
 			_this = this;
@@ -414,6 +438,7 @@
 			this.slickSlider();
 
 			this.initPopup();
+			this.initEvents();
 
 			this.initMask();
 			this.initSelect();

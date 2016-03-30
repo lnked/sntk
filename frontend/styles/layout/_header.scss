@@ -20,7 +20,7 @@
 
 	&__col {
 		position: absolute;
-		top: 16px;
+		top: 25px;
 		float: left;
 
 		&_x1 {
@@ -83,11 +83,18 @@
 		position: absolute;
 		right: $padding;
 		top: 10px;
+
+		&__row {
+			clear: both;
+
+			&:not(:last-child) {
+				margin-bottom: 5px;	
+			}
+		}
 	}
 	
 	&__social {
-		position: absolute;
-		right: $padding;
-		bottom: 10px;
+		float: right;
+		margin-left: 5px;
 	}
 }
