@@ -1,0 +1,30 @@
+.map-presence {
+    width: 100%;
+    position: relative;
+    background: url(../images/russia.png) 50% 50% no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: 40px;
+
+    &:before {
+        content: "";
+        display: block;
+        padding-top: 52.182952183em;    
+    }
+
+    &__marker {
+        width: 23px;
+        height: 34px;
+        position: absolute;
+        z-index: 10;
+        cursor: pointer;
+        background: url(../images/marker.png) 0 0 no-repeat;
+        background-image: url(../images/marker.svg);
+        background-size: 23px 34px;
+    }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+    .map-presence {
+        background-image: url(../images/russia@2x.png);
+    }
+}

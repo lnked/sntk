@@ -1,5 +1,5 @@
 @@include('./components/meta.html', {
-    "title": "о компании"
+    "title": "Партнеры"
 })
 
 @@include('./popups/popup.html')
@@ -10,9 +10,7 @@
     
     @@include('./components/header.html')
     
-    @@include('./components/navigation.html', {
-        "current": "about"
-    })
+    @@include('./components/navigation.html')
 
     <div class="layout-wrapper__inner" itemprop="mainContentOfPage">
         
@@ -20,39 +18,22 @@
         
             @@include('./components/breadcrumbs.html', {
                 "page1": "Главная",
-                "page2": "О компании",
+                "page2": "Карта присутствия",
                 "page3": ""
             })
-            
-            <h4 class="page__title"><span class="page__title__text">О КОМПАНИИ</span></h4>
-            
-            <blockquote class="blockquote">
-                ЗАО «Специальная научно-техническая компания» (ЗАО «СНТК») – современная, динамично развивающаяся компания, основными направлениями деятельности которой является оказание услуг в области защиты информации и защиты государственной тайны. 
-            </blockquote>
-            
-            <div class="page__about">
-                <p>Высокая техническая оснащенность, опытный и квалифицированный персонал – залог качества предоставляемых нами услуг.</p>
-                <p>Компания «СНТК» оказывает услуги по защите информации в соответствии с законодательством Российской Федерации.</p>
-                <p>Основные направления услуг: консультационные услуги, техническая поддержка средств и систем защиты информации, проектно-изыскательские работы, поставка программных и технических средств защиты информации, монтажные и пуско-наладочные работы.</p>
-                <p>Мы работаем с организациями всех сфер деятельности, как с государственными, так и предприятиями коммерческого сектора любой формы собственности.</p>
-            </div>
-            
-            @@include('./components/fieldset.html')
-            
-            <div class="page__video">
-                <iframe width="100%" height="530" src="https://www.youtube.com/embed/qxtK8mTJdRM?rel=0&showinfo=0&egm=0&autoplay=0&border=0&fmt=18" frameborder="0" allowfullscreen></iframe>
-            </div>
 
-            @@include('./components/carousel.html')
+            <h4 class="page__title"><span class="page__title__text">Карта присутствия</span></h4>
 
+            <article class="map-presence">
+                <mark class="map-presence__marker" style="left: 320px; top: 280px;" data-title="Москва"></mark>
+            </article>
+            
         </div>
 
     </div>
 
 </div>
 
-@@include('./components/footer.html', {
-    "current": "about"
-})
+@@include('./components/footer.html')
 
 @@include('./components/scripts.html')
