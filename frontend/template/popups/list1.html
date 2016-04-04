@@ -14,67 +14,33 @@
 
 				<div class="popup__header">Спецификация оборудования</div>
 				
-				<table class="popup__table">
-					<colgroup>
-						<col width="52">
-						<col>
-						<col width="150">
-					</colgroup>
-					<thead>
-						<tr>
-							<th class="tac">№</th>
-							<th>Наименование оборудования</th>
-							<th>Количество</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td class="tac">1.</td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-						</tr>
-						<tr>
-							<td class="tac">2.</td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-						</tr>
-						<tr>
-							<td class="tac">3.</td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-						</tr>
-						<tr>
-							<td class="tac">4.</td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-						</tr>
-						<tr>
-							<td class="tac">5.</td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-						</tr>
-						<tr>
-							<td class="tac">6.</td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-						</tr>
-						<tr>
-							<td class="tac">7.</td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-						</tr>
-						<tr>
-							<td class="tac">8.</td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-						</tr>
-						<tr>
-							<td class="tac">9.</td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-						</tr>
-					</tbody>
-				</table>
+				<div class="form__addition js-form-addition">
+					<table class="popup__table">
+						<colgroup>
+							<col width="52">
+							<col>
+							<col width="150">
+						</colgroup>
+						<thead>
+							<tr>
+								<th class="tac">№</th>
+								<th>Наименование оборудования</th>
+								<th>Количество</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="tac">1.</td>
+								<td><input name="f[1]" class="form__input"></td>
+								<td><input name="d[1]" class="form__input"></td>
+							</tr>
+						</tbody>
+					</table>
+
+					<div class="form__row">
+					    <span class="event-button event-button_add js-add-element" data-template="tmpl-equipment">Добавить еще</span>
+					</div>
+				</div>
 				
 				<label class="form__label">
 					<span class="form__label__name">Указать максимальный гриф секретности обрабатываемой информации</span>

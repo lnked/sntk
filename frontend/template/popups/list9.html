@@ -236,85 +236,37 @@
 				</table>
 				
 				<div class="popup__header">Информация по каждому подразделению/филиалу компании</div>
+				
+				<div class="form__addition js-form-addition">
+					<table class="popup__table">
+						<colgroup>
+							<col>
+							<col>
+							<col width="180">
+							<col width="180">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>Наименование структурного подразделения / филиала</th>
+								<th>Местонахождение (город)</th>
+								<th>Кол-во<br>АРМ с ПДн</th>
+								<th>Кол-во серверов с ПДн</th>
+							</tr>
+						</thead>
+						<tbody>
+						    <tr>
+						        <td><input name="a[1]" class="form__input"></td>
+						        <td><input name="b[1]" class="form__input"></td>
+						        <td><input name="c[1]" class="form__input"></td>
+						        <td><input name="d[1]" class="form__input"></td>
+						    </tr>
+						</tbody>
+					</table>
 
-				<table class="popup__table">
-					<colgroup>
-						<col>
-						<col>
-						<col width="180">
-						<col width="180">
-					</colgroup>
-					<thead>
-						<tr>
-							<th>Наименование структурного подразделения / филиала</th>
-							<th>Местонахождение (город)</th>
-							<th>Кол-во<br>АРМ с ПДн</th>
-							<th>Кол-во серверов с ПДн</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-						</tr>
-						<tr>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-						</tr>
-						<tr>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-						</tr>
-						<tr>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-						</tr>
-						<tr>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-						</tr>
-						<tr>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-						</tr>
-						<tr>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-						</tr>
-						<tr>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-						</tr>
-						<tr>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-						</tr>
-						<tr>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-						</tr>
-					</tbody>
-				</table>
+					<div class="form__row">
+					    <span class="event-button event-button_add js-add-element" data-template="tmpl-table-structure">Добавить еще</span>
+					</div>
+				</div>
 
 				<div class="form__button">
 					<button type="submit" class="button button_large">отправить</button>

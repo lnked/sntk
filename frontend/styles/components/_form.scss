@@ -169,6 +169,14 @@ textarea {
 		font-weight: 400;
 	}
 
+	&__addition {
+		margin-bottom: 25px;
+
+		table, .popup__table {
+			margin-bottom: 10px;
+		}
+	}
+
 	&__button {
 		clear: both;
 		text-align: center;

@@ -16,9 +16,16 @@
 			});
 		},
 
-		initSelect: function()
+		initSelect: function(group)
 		{
-			$('select').selectbox();
+			if (typeof(group) == 'undefined')
+			{
+				$('select').not('.is-system').selectbox();
+			}
+			else
+			{
+				group.find('select').not('.is-system').selectbox();
+			}
 		},
 
 		initMask: function()
@@ -440,6 +447,7 @@
 			this.initPopup();
 			this.initEvents();
 
+			this.initAddition();
 			this.initMask();
 			this.initSelect();
 			this.initSandwich();

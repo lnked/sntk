@@ -152,91 +152,52 @@
 				
 				<p class="content-block">Описание окон: в таблице указать размеры окон (ширину и высоту), материал (металлопластик, дерево и т.д.), количество стёкол (внутренней рамы каждого окна):</p>
 
-				<table class="popup__table">
-					<colgroup>
-						<col width="250">
-						<col width="100">
-						<col width="100">
-						<col>
-						<col width="120">
-						<col width="120">
-					</colgroup>
-					<thead>
-						<tr>
-							<th rowspan="2">Описание окна (схема) <strong>обязательно</strong></th>
-							<th colspan="2">Размеры</th>
-							<th rowspan="2">Материал</th>
-							<th rowspan="2">Количество сегментов стекла</th>
-							<th rowspan="2">Расстояние межд. стекл.</th>
-						</tr>
-						<tr>
-							<th>Шир.</th>
-							<th>Выс.</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>
-								<input type="text" class="form__input" placeholder="1-е окно">
-							</td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-							<td>
-								<select name="">
-									<option value="">пластик</option>
-									<option value="">дерево</option>
-								</select>
-							</td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-						</tr>
-						<tr>
-							<td>
-								<input type="text" class="form__input" placeholder="2-е окно">
-							</td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-							<td>
-								<select name="">
-									<option value="">пластик</option>
-									<option value="">дерево</option>
-								</select>
-							</td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-						</tr>
-						<tr>
-							<td>
-								<input type="text" class="form__input" placeholder="3-е окно">
-							</td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-							<td>
-								<select name="">
-									<option value="">пластик</option>
-									<option value="">дерево</option>
-								</select>
-							</td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-						</tr>
-						<tr>
-							<td>
-								<input type="text" class="form__input" placeholder="4-е окно">
-							</td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-							<td>
-								<select name="">
-									<option value="">пластик</option>
-									<option value="">дерево</option>
-								</select>
-							</td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-						</tr>
-					</tbody>
-				</table>
+				<div class="form__addition js-form-addition">
+					<table class="popup__table">
+						<colgroup>
+							<col width="250">
+							<col width="100">
+							<col width="100">
+							<col>
+							<col width="120">
+							<col width="120">
+						</colgroup>
+						<thead>
+							<tr>
+								<th rowspan="2">Описание окна (схема) <strong>обязательно</strong></th>
+								<th colspan="2">Размеры</th>
+								<th rowspan="2">Материал</th>
+								<th rowspan="2">Количество сегментов стекла</th>
+								<th rowspan="2">Расстояние межд. стекл.</th>
+							</tr>
+							<tr>
+								<th>Шир.</th>
+								<th>Выс.</th>
+							</tr>
+						</thead>
+						<tbody>
+						    <tr>
+						        <td>
+						            <input name="o[1]" class="form__input" placeholder="1-е окно">
+						        </td>
+						        <td><input name="f[1]" class="form__input"></td>
+						        <td><input name="d[1]" class="form__input"></td>
+						        <td>
+						            <select name="s[1]">
+						                <option value="">пластик</option>
+						                <option value="">дерево</option>
+						            </select>
+						        </td>
+						        <td><input name="r[1]" class="form__input"></td>
+						        <td><input name="x[1]" class="form__input"></td>
+						    </tr>
+						</tbody>
+					</table>
+
+					<div class="form__row">
+					    <span class="event-button event-button_add js-add-element" data-template="tmpl-windows">Добавить еще</span>
+					</div>
+				</div>
 
 				<label class="form__label">
 					<span class="form__label__name">Расположение окон</span>
@@ -274,242 +235,124 @@
 				</label>
 
 				<p class="content-block">Состав средств защиты (СЗИ):</p>
-						
-				<table class="popup__table">
-					<colgroup>
-						<col width="52">
-						<col>
-						<col width="160">
-						<col width="160">
-					</colgroup>
-					<thead>
-						<tr>
-							<th class="tac">№</th>
-							<th>Наименование СЗИ</th>
-							<th>Заводской номер</th>
-							<th>Необходимость замены</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td class="tac">1.</td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-						</tr>
-						<tr>
-							<td class="tac">2.</td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-						</tr>
-						<tr>
-							<td class="tac">3.</td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-						</tr>
-						<tr>
-							<td class="tac">4.</td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-						</tr>
-						<tr>
-							<td class="tac">5.</td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-						</tr>
-					</tbody>
-				</table>
+				
+				<div class="form__addition js-form-addition">
+				   	<table class="popup__table">
+						<colgroup>
+							<col width="52">
+							<col>
+							<col width="160">
+							<col width="160">
+						</colgroup>
+						<thead>
+							<tr>
+								<th class="tac">№</th>
+								<th>Наименование СЗИ</th>
+								<th>Заводской номер</th>
+								<th>Необходимость замены</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="tac">1.</td>
+								<td><input name="a[1]" class="form__input"></td>
+								<td><input name="b[1]" class="form__input"></td>
+								<td><input name="c[1]" class="form__input"></td>
+							</tr>
+						</tbody>
+					</table>
+
+				    <div class="form__row">
+				        <span class="event-button event-button_add js-add-element" data-template="tmpl-table-szi">Добавить еще</span>
+				    </div>
+				</div>
 
 				<p class="content-block">Состав технических средств (ТС):</p>
 						
-				<table class="popup__table">
-					<colgroup>
-						<col width="52">
-						<col>
-						<col width="150">
-						<col width="150">
-						<col width="120">
-						<col width="120">
-					</colgroup>
-					<thead>
-						<tr>
-							<th rowspan="2" class="tac">№</th>
-							<th rowspan="2">Наименование ТС</th>
-							<th rowspan="2">Тип (ОТСС, ВТСС)</th>
-							<th rowspan="2">Примечание</th>
-							<th colspan="2">Необходимость проведения</th>
-						</tr>
-						<tr>
-							<th class="tac">СИ</th>
-							<th class="tac">СП</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td class="tac">1.</td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-						</tr>
-						<tr>
-							<td class="tac">2.</td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-						</tr>
-						<tr>
-							<td class="tac">3.</td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-						</tr>
-						<tr>
-							<td class="tac">4.</td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-						</tr>
-						<tr>
-							<td class="tac">5.</td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-							<td><input type="text" class="form__input"></td>
-						</tr>
-					</tbody>
-				</table>
+				<div class="form__addition js-form-addition">
+					<table class="popup__table">
+						<colgroup>
+							<col width="52">
+							<col>
+							<col width="150">
+							<col width="150">
+							<col width="120">
+							<col width="120">
+						</colgroup>
+						<thead>
+							<tr>
+								<th rowspan="2" class="tac">№</th>
+								<th rowspan="2">Наименование ТС</th>
+								<th rowspan="2">Тип (ОТСС, ВТСС)</th>
+								<th rowspan="2">Примечание</th>
+								<th colspan="2">Необходимость проведения</th>
+							</tr>
+							<tr>
+								<th class="tac">СИ</th>
+								<th class="tac">СП</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="tac">1.</td>
+								<td><input name="a[1]" class="form__input"></td>
+								<td><input name="b[1]" class="form__input"></td>
+								<td><input name="c[1]" class="form__input"></td>
+								<td><input name="d[1]" class="form__input"></td>
+								<td><input name="e[1]" class="form__input"></td>
+							</tr>
+						</tbody>
+					</table>
+
+					<div class="form__row">
+					    <span class="event-button event-button_add js-add-element" data-template="tmpl-table-otss-vtss">Добавить еще</span>
+					</div>
+				</div>
 			
 				<p class="content-block">Список лиц, допущенных к работе на ОИ:</p>
 				
-				<table class="popup__table">
-					<colgroup>
-						<col width="52">
-						<col>
-						<col width="160">
-					</colgroup>
-					<thead>
-						<tr>
-							<th class="tac">№</th>
-							<th>Должность, звание (если есть), Ф.И.О.</th>
-							<th>Категория</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td class="tac">1.</td>
-							<td>
-								<label class="form__label">
-									<span class="form__label__name">Должность</span>
-									<input type="text" class="form__input">
-								</label>
+				<div class="form__addition js-form-addition">
+   					<table class="popup__table">
+						<colgroup>
+							<col width="52">
+							<col>
+							<col width="160">
+						</colgroup>
+						<thead>
+							<tr>
+								<th class="tac">№</th>
+								<th>Должность, звание (если есть), Ф.И.О.</th>
+								<th>Категория</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="tac">1.</td>
+								<td>
+									<label class="form__label">
+										<span class="form__label__name">Должность</span>
+										<input name="a[1]" class="form__input">
+									</label>
 
-								<label class="form__label">
-									<span class="form__label__name">Звание</span>
-									<input type="text" class="form__input">
-								</label>
+									<label class="form__label">
+										<span class="form__label__name">Звание</span>
+										<input name="b[1]" class="form__input">
+									</label>
 
-								<label class="form__label">
-									<span class="form__label__name">Ф.И.О.</span>
-									<input type="text" class="form__input">
-								</label>
-							</td>
-							<td><input type="text" class="form__input"></td>
-						</tr>
-						<tr>
-							<td class="tac">2.</td>
-							<td>
-								<label class="form__label">
-									<span class="form__label__name">Должность</span>
-									<input type="text" class="form__input">
-								</label>
+									<label class="form__label">
+										<span class="form__label__name">Ф.И.О.</span>
+										<input name="c[1]" class="form__input">
+									</label>
+								</td>
+								<td><input name="d[1]" class="form__input"></td>
+							</tr>
+						</tbody>
+					</table>
 
-								<label class="form__label">
-									<span class="form__label__name">Звание</span>
-									<input type="text" class="form__input">
-								</label>
-
-								<label class="form__label">
-									<span class="form__label__name">Ф.И.О.</span>
-									<input type="text" class="form__input">
-								</label>
-							</td>
-							<td><input type="text" class="form__input"></td>
-						</tr>
-						<tr>
-							<td class="tac">3.</td>
-							<td>
-								<label class="form__label">
-									<span class="form__label__name">Должность</span>
-									<input type="text" class="form__input">
-								</label>
-
-								<label class="form__label">
-									<span class="form__label__name">Звание</span>
-									<input type="text" class="form__input">
-								</label>
-
-								<label class="form__label">
-									<span class="form__label__name">Ф.И.О.</span>
-									<input type="text" class="form__input">
-								</label>
-							</td>
-							<td><input type="text" class="form__input"></td>
-						</tr>
-						<tr>
-							<td class="tac">4.</td>
-							<td>
-								<label class="form__label">
-									<span class="form__label__name">Должность</span>
-									<input type="text" class="form__input">
-								</label>
-
-								<label class="form__label">
-									<span class="form__label__name">Звание</span>
-									<input type="text" class="form__input">
-								</label>
-
-								<label class="form__label">
-									<span class="form__label__name">Ф.И.О.</span>
-									<input type="text" class="form__input">
-								</label>
-							</td>
-							<td><input type="text" class="form__input"></td>
-						</tr>
-						<tr>
-							<td class="tac">5.</td>
-							<td>
-								<label class="form__label">
-									<span class="form__label__name">Должность</span>
-									<input type="text" class="form__input">
-								</label>
-
-								<label class="form__label">
-									<span class="form__label__name">Звание</span>
-									<input type="text" class="form__input">
-								</label>
-
-								<label class="form__label">
-									<span class="form__label__name">Ф.И.О.</span>
-									<input type="text" class="form__input">
-								</label>
-							</td>
-							<td><input type="text" class="form__input"></td>
-						</tr>
-					</tbody>
-				</table>
+				    <div class="form__row">
+				        <span class="event-button event-button_add js-add-element" data-template="tmpl-table-post">Добавить еще</span>
+				    </div>
+				</div>
 
 				<div class="form__button">
 					<button type="submit" class="button button_large">отправить</button>
