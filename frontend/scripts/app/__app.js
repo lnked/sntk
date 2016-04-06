@@ -437,6 +437,29 @@
 			}
 		},
 
+		initMarker: function()
+		{
+			var $item;
+
+			body.on('mouseenter', '.js-marker', function(){
+				$item = $(this).find('.map-presence__marker__tooltip');
+				$item.addClass('show');
+				
+				setTimeout(function(){
+					$item.addClass('animate');
+				}, 5);
+			});
+
+			body.on('mouseleave', '.js-marker', function(){
+				$item = $(this).find('.map-presence__marker__tooltip');
+				$item.removeClass('animate');
+
+				setTimeout(function(){
+					$item.removeClass('show');
+				}, 300);
+			});
+		},
+
 		init: function()
 		{
 			_this = this;
@@ -445,6 +468,7 @@
 			this.slickSlider();
 
 			this.initPopup();
+			this.initMarker();
 			this.initEvents();
 
 			this.initAddition();
