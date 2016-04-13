@@ -1,9 +1,3 @@
-.table-touch {
-	width: 100%;
-	overflow: auto;
-	-webkit-overflow-scrolling: touch;
-}
-
 table {
 	width: 100%;
 	border-collapse: collapse;
@@ -82,5 +76,13 @@ table {
 				}
 			}
 		}
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.table-touch {
+		width: 100%;
+		overflow: auto;
+		-webkit-overflow-scrolling: touch;
 	}
 }

@@ -64,6 +64,10 @@
             }
         }
 
+        &:hover {
+            z-index: 1000;
+        }
+
         &:hover &__tooltip {
             opacity: 1;
         }

@@ -184,5 +184,18 @@
 			}
 		}
 	}
-	
+
+	.layout-header__button__row:not(:last-child) {
+	    margin-bottom: 5px;
+	    float: left;
+	    width: 100%;
+	    padding-right: 40px;
+	}
+
+	.layout-header__social {
+	    float: right;
+	    padding-top: 0;
+	    margin-top: -32px;
+	    margin-right: -40px;
+	}
 }
